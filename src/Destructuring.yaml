@@ -1,66 +1,15 @@
-Destructuring a webste mammoth murals using gsap in react
+Destrucutring website mammoth murals
 
-isme hamare pass 4 main library hongy
-reactjs
-gsap
-locomotive scrollTrigger
-framer motion
 
-fonts
-font Suisseintl - 500
-font2 Obviously - 800
+
+assets
+
+
+npms
+
+
+
+components
+
 
 pages
-Home
-landing page
-ourpartners component reused
-ourwork 
-ourworkcard (reuse)
-viewallwork
-impressions
-testimonials
-helpingbrands
-ratingreviews
-faqsection
-unforgateable
-
-work 
-worklandingpage
-bussinesstraffic
-ourworkcard (reuse) = isme filter hongey card jese (allwork,Murals,Signs,Ghost signs)
-unforgateable (reused)
-
-Abotuus
-aboutuslanding
-ourstory
-ourpartners component reused
-ourteam
-unforgateable (reused)
-
-services
-Serviceslanding
-artistwork
-bigmurals
-ourprocess
-faqsection copied
-unforgateable (reused)
-
-
-component
-Loader
-navbar = pure page pe dikygey abssoute rahe gi 
-Footer
-button
-video component
-big text 
-landmarkanimated
-ourpartners component reused
-businnestraffic
-ourworkcard
-
-
-
-
-
-
-
