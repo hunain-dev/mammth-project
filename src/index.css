@@ -1,50 +1,77 @@
 @import "tailwindcss";
 
-html,body{
-  height: 100%;
-  width: 100%;
+html,
+body {
+  background-color: #FFF6E5;
 }
 
 
 
-
-
 @font-face {
-    font-family: 'ObviouslyDemo';
-    src: url('/src/assets/Fonts/ObviouslyDemo-CondensedBold.ttf');
-  }
-
-  @font-face {
-    font-family: 'SuisseIntl';
-    src: url('/src/assets/Fonts/SuisseIntl-Regular.ttf');
-  }
-
-@font-face {
-  font-family:'ObviouslyDemoblack' ;
-  src: url('/src/assets/Fonts/ObviouslyDemo-NarrowBlack.ttf');
-}
-@font-face {
-  font-family:'ObviouslyDemoCondensedBold' ;
+  font-family: 'ObviouslyDemo';
   src: url('/src/assets/Fonts/ObviouslyDemo-CondensedBold.ttf');
 }
-.ObviouslyDemoblack{
+
+@font-face {
+  font-family: 'SuisseIntl';
+  src: url('/src/assets/Fonts/SuisseIntl-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'ObviouslyDemoblack';
+  src: url('/src/assets/Fonts/ObviouslyDemo-NarrowBlack.ttf');
+}
+
+@font-face {
+  font-family: 'ObviouslyDemoCondensedBold';
+  src: url('/src/assets/Fonts/ObviouslyDemo-CondensedBold.ttf');
+}
+
+.ObviouslyDemoblack {
   font-family: 'ObviouslyDemoblack';
 }
-  /* ObviouslyDemo-NarrowBlack */
+
+/* ObviouslyDemo-NarrowBlack */
 .ObviouslyDemo {
   font-family: 'ObviouslyDemo';
 
 }
+
 .SuisseIntl {
-    font-family: 'SuisseIntl';
-  
-  }
+  font-family: 'SuisseIntl';
+
+}
 
 .ObviouslyDemoCondensedBold {
-    font-family: 'ObviouslyDemoCondensedBold';
-  
+  font-family: 'ObviouslyDemoCondensedBold';
+
+}
+
+::-webkit-scrollbar {
+  width: 0%;
+}
+
+.u-sprite {
+  --sprite-url: '';
+  --sprite-width: 4808px; /* full image width */
+  --sprite-height: 585px; /* full image height */
+  --frame-count: 4; /* kitne frames hain */
+  --animation-duration: 0.5s;
+
+  width: calc(var(--sprite-width) / var(--frame-count));
+  height: var(--sprite-height);
+  background-image: var(--sprite-url);
+  background-size: var(--sprite-width) var(--sprite-height);
+  background-repeat: no-repeat;
+
+  animation: spriteFrames var(--animation-duration) steps(var(--frame-count)) infinite;
+}
+
+@keyframes spriteFrames {
+  from {
+    background-position: 0 0;
   }
-  
-  ::-webkit-scrollbar{
-    width: 0%;
+  to {
+    background-position: calc(-1 * var(--sprite-width)) 0;
   }
+}

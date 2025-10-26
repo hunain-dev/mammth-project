@@ -1,15 +1,71 @@
 Destrucutring website mammoth murals
 
-
-
-assets
+assets images videos ✅
 
 
 npms
+gsap ✅
+framer motion ✅
+react router dom ✅ 
+dyamci routing 
 
 
-
-components
-
+components ✅
+header  ✅
+footer
+button 
+textaniamtion components
+ourpartners
+biggertext
+cards
+video components
+faqs
+Unforgettable
+bacgkrondanimate
+loader
+MotionText
 
 pages
+
+Home
+
+section folder
+HomeLandingpage ✅
+ourpartners resue components ✅
+ourwork bigger text uske uper bacgkrondanimate ✅
+cards reuse ✅
+view allwork video reuse
+our expereince
+Testimonials
+whyworkwithus
+reviews
+faqs reuse components
+Unforgettable reuse components
+footer
+
+work
+section
+worklanindg page Bigger text reuse uske uper anaimte backgorund
+card reeuse
+Unforgettable resue
+footeer
+
+About us
+aboutlandingpage bigger text reuse uske necy abotuys
+Birmingham
+startedourstory
+ourpartners reuse
+ourteam
+Unforgettable reuse
+footer 
+
+
+Services
+section
+
+services landing page
+bigmurals
+Our process
+faqs reuse
+Unforgettable resue
+footer
