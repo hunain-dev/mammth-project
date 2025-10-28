@@ -4,7 +4,7 @@ import Button from './Button.JSX'
 import Kindman from "../assets/images/Kindman.jpg"
 const Header = () => {
   return (
-    <div className=' px-8 py-6 fixed z-[999] flex items-center justify-between  w-full '>
+    <div className=' px-8 py-6 z-[999] fixed  flex items-center justify-between  w-full '>
  <div className='p-1 bg-black rounded-1xl'>
   <div className='-mt-2'>
   <Textaniamtion text="MAMMOTH MURALS" />

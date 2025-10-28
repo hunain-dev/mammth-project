@@ -76,3 +76,54 @@ body {
     background-position: calc(-1 * var(--sprite-width)) 0;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+.u-spritetets {
+  --sprite-url: '';
+
+  --frame-width: calc(var(--sprite-width) / 4);
+  --animation-duration: 0.5s;
+
+  width: var(--frame-width);
+  height: var(--sprite-height);
+  background-image: var(--sprite-url);
+  background-size: var(--sprite-width) var(--sprite-height);
+  background-repeat: no-repeat;
+  overflow: hidden;
+  animation: spriteFrames var(--animation-duration) steps(4, end) infinite;
+}
+
+/* Specific sprite image */
+.u-sprite-quote {
+  --sprite-url: url('./assets/images/quotattion.png');
+  --sprite-width: 42vw;
+  --sprite-height: 12vw;
+}
+
+/* Positioning (like your original CSS) */
+.testimonials_heading_backquote {
+  @apply absolute;
+  left: 2%;
+  transform-origin: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Keyframes */
+@keyframes spriteFrames {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: calc(var(--sprite-width) * -1) 0;
+  }
+}

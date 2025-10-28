@@ -7,6 +7,7 @@ const App = () => {
   return (
     <div>
       <Home/>
+      <div className="h-[30vh] w-full"></div>
     </div>
   )
 }
