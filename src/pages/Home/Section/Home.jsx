@@ -2,6 +2,7 @@ import React from 'react'
 import HomeLandingpage from '../HomeLandingpage'
 import Ourwork from './Ourwork'
 import Allwork from './Allwork'
+import Ourexpereince from './Ourexpereince'
 
 const Home = () => {
   return (
@@ -15,6 +16,9 @@ const Home = () => {
       </div>
       <div className='px-2 mt-26'>
       <Allwork />
+      </div>
+      <div className='mt-12'>
+      <Ourexpereince />
       </div>
     </div>
   )
