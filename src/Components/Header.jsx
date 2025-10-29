@@ -15,9 +15,9 @@ const Header = () => {
 
      
         <div className='h-full  flex items-center justify-end gap-3'>
-        <Button btntext="Work" classname="px-3 py-3" />
-        <Button btntext="About" classname="px-3 py-3" />
-        <Button btntext="Services" classname="px-3 py-3" />
+        <Button btntext="Work" classname="px-3 py-3 bg-[#FFD900]"  />
+        <Button btntext="About" classname="px-3 py-3  bg-[#FFD900]" />
+        <Button btntext="Services" classname="px-3 py-3  bg-[#FFD900]" />
       </div>
 
         <div className='h-full  flex items-center justify-end'>

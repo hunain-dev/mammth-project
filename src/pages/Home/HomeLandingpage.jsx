@@ -16,14 +16,14 @@ const HomeLandingpage = () => {
     <span>impossible to ignore <span>.</span> </span>
   </div>
 </div>
-        <div className='h-full  w-full  flex items-start  justify-end flex-col mt-30 gap-3 p-7'>
+        <div className='h-full    flex items-start  justify-end flex-col mt-30 gap-3 p-13'>
             <Video/>
-            <h2 className='SuisseIntl'>Show reel (2023__2025) </h2>
-        </div>al
+            <h2 className='SuisseIntl font-[600] text-[1.2vw]'>Show reel (2023__2025) </h2>
+        </div>
       
       
     </div>
-    <div className='mt-30'>
+    <div className='mt-44'>
         <h3 className='SuisseIntl text-[1.6vw] font-[600]'>We paint bold, handle-crafted walls for real
          <br />
          estate developer designer-driven
@@ -34,7 +34,7 @@ const HomeLandingpage = () => {
 
         </h3>
         <div className='flex items-center justify-start gap-3 mt-6'>
-        <Button  imgsrc={Kindman} btntext="Book a discovery call"  classname="px-4 py-2 bg-black text-white" />
+        <Button  imgsrc={Kindman} btntext="Book a discovery call"  classname="px-4 py-3 bg-black text-white" />
         <Button btntext="See our work" classname="px-3 py-3" />
 
         </div>

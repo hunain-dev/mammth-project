@@ -4,6 +4,8 @@ import Ourwork from './Ourwork'
 import Allwork from './Allwork'
 import Ourexpereince from './Ourexpereince'
 import Testimonials from './Testimonials'
+import Reviews from './Reviews'
+import Faqs from '../../../Components/Faqs'
 
 const Home = () => {
   return (
@@ -24,6 +26,13 @@ const Home = () => {
 
       <div className='mt-12'>
       <Testimonials />
+      </div>
+      <div className='mt-24 px-9'>
+      <Reviews />
+      </div>
+
+      <div className='mt-12 px-9'>
+      <Faqs />
       </div>
     </div>
   )
