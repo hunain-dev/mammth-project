@@ -127,3 +127,103 @@ body {
     background-position: calc(var(--sprite-width) * -1) 0;
   }
 }
+
+
+/* unforgatetble component aniamtion */
+
+/* Correct class names — use .u-sprite (not .u-spritessss) */
+.hero_contact_top-left.u-sprite.u-sprite-blink.is-home {
+  position: absolute;
+  top: 11%;
+  left: 60%;
+  transform: translate(-50%, -50%) scale(0.6);
+  transform-origin: center;
+}
+
+/* Sprite base */
+.u-sprite-blink {
+  --sprite-url: url("/src/assets//images/top.png");
+  --sprite-width: 39vw; /* total width of sprite image */
+  --sprite-height: 18vw; /* height of one frame */
+}
+
+/* Sprite animation settings */
+.u-sprite {
+  --frame-count: 4; /* number of frames in the sprite sheet */
+  --frame-width: calc(var(--sprite-width) / var(--frame-count));
+  --animation-duration: 1s;
+
+  width: var(--frame-width);
+  height: var(--sprite-height);
+  background-image: var(--sprite-url);
+  background-size: var(--sprite-width) var(--sprite-height);
+  background-repeat: no-repeat;
+  overflow: hidden;
+
+  animation: spriteFrames var(--animation-duration) steps(var(--frame-count), end) infinite;
+}
+
+/* Keyframes for sprite animation */
+@keyframes spriteFrames {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: calc(-1 * var(--sprite-width)) 0;
+  }
+}
+
+/* Elastic bounce animation for images */
+
+
+
+/* === FOOTER SPRITE ANIMATION === */
+.footer_bottom_deco_wrap.u-sprite.u-sprite-footer {
+  pointer-events: none;
+  max-width: none;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0) scale(0.7);
+  transform-origin: center;
+}
+
+/* Wrapper adjustments */
+.footer_bottom_deco_wrap.u-sprite {
+  max-width: 100%;
+}
+
+/* === SPRITE CONFIGURATION === */
+.u-sprite-footer {
+  --sprite-url: url("/src/assets/images/Footer.png"); /* Place your image inside public/images/Footer.png */
+  --sprite-width: 3712px; /* Total sprite sheet width */
+  --sprite-height: 928px; /* Single frame height */
+}
+
+/* === CORE SPRITE LOGIC === */
+.u-spritefooters {
+  --sprite-url: "";
+  --sprite-width: 400px;
+  --sprite-height: 100px;
+  --frame-count: 4; /* number of frames in the sprite */
+  --frame-width: calc(var(--sprite-width) / var(--frame-count));
+  --animation-duration: 0.8s;
+
+  width: var(--frame-width);
+  height: var(--sprite-height);
+  background-image: var(--sprite-url);
+  background-size: var(--sprite-width) var(--sprite-height);
+  background-repeat: no-repeat;
+  overflow: hidden;
+  animation: spriteFrames var(--animation-duration) steps(var(--frame-count), end) infinite;
+}
+
+/* === ANIMATION === */
+@keyframes spriteFrames {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: calc(-1 * var(--sprite-width)) 0;
+  }
+}

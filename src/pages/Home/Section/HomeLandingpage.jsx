@@ -1,13 +1,13 @@
 import React from 'react'
-import Video from '../../Components/Video'
-import Button from '../../Components/Button.JSX'
-import Kindman from "../../assets/images/Kindman.jpg"
-import wallframe from "../../assets/images/wallframe.jpg"
-import Ourpartners from '../../Components/Ourpartners'
+import Video from '../../../Components/Video'
+import Kindman from "../../../assets/images/Kindman.jpg"
+import wallframe from "../../../assets/images/wallframe.jpg"
+import Ourpartners from '../../../Components/Ourpartners'
+import Button from '../../../Components/button'
 const HomeLandingpage = () => {
   return (
     <>
-    <div className='min-h-screen  w-full   '>
+    <div className='  w-full   '>
     <div className='grid grid-cols-[70%_31%] w-full '>
        <div className="h-full  flex items-start justify-start">
   <div className="ObviouslyDemo text-[#120011] flex flex-col  text-[10.9vw] uppercase leading-[0.9] font-[600]">

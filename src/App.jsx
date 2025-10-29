@@ -1,15 +1,19 @@
-import Home from "./pages/Home/Section/Home"
-import LocomotiveScroll from 'locomotive-scroll';
+import { Routes, Route } from "react-router-dom";
+import LocomotiveScroll from "locomotive-scroll";
+import Home from "./pages/Home/Section/Home";
+import Work from "./pages/Home/Work/Section/Work";
 
 const App = () => {
-  const locomotiveScroll = new LocomotiveScroll();
+    const locomotiveScroll = new LocomotiveScroll();
 
   return (
     <div>
-      <Home/>
-      <div className="h-[30vh] w-full"></div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/work" element={<Work />} />
+      </Routes>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
