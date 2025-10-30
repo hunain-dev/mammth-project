@@ -219,7 +219,7 @@ body {
 }
 
 /* === ANIMATION === */
-@keyframes spriteFrames {
+@keyframes spriteFramesss {
   from {
     background-position: 0 0;
   }
@@ -227,3 +227,35 @@ body {
     background-position: calc(-1 * var(--sprite-width)) 0;
   }
 }
+
+
+
+@keyframes spriteFramesss {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -3452px 0; 
+  }
+}
+
+.hero_about_stop-motionss {
+  @apply pointer-events-none absolute;
+  top: 2.9vw;
+  transform-origin: 50% 0;
+  transform: scale(0.85);
+  --sprite-url: url('/src/assets/images/Aboutus.png');
+  --sprite-width: 3452px;
+  --sprite-height: 483px;
+  --frame-width: calc(var(--sprite-width) / 4);
+  --animation-duration: 0.5s;
+
+  width: var(--frame-width);
+  height: var(--sprite-height);
+  background-image: var(--sprite-url);
+  background-size: var(--sprite-width) var(--sprite-height);
+  background-repeat: no-repeat;
+  overflow: hidden;
+
+  animation: spriteFramesss var(--animation-duration) steps(4, end) infinite;
+} 
