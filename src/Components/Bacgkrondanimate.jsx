@@ -3,7 +3,7 @@
 import React from 'react'
  import swigger from "../assets/images/swigger.png";
 
-const Bacgkrondanimate = () => {
+const Bacgkrondanimate = ({text}) => {
   return (
     <div className='u-sprite flex items-center justify-center '  style={{
                   "--sprite-url": `url(${swigger})`,
@@ -12,8 +12,7 @@ const Bacgkrondanimate = () => {
                   "--frame-count": "4",
                   "--animation-duration": "0.5s",
                 }}>
-                    <h2 className='SuisseIntl font-[600] text-4xl'>Don’t let blank walls waste potential. <br />
-                    See how our clients turn empty space into <br /> buzz, foot traffic, and business results.
+                    <h2 className='SuisseIntl font-[600] text-4xl'>{text}
 
                     </h2>
                 </div>

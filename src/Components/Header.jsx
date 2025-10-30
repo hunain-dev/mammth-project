@@ -17,7 +17,7 @@ const Header = () => {
      
         <div className='h-full  flex items-center justify-end gap-3'>
       <Link to="/Work"><Button btntext="Work" classname="px-3 py-3 bg-[#FFD900]"  /></Link>  
-        <Button btntext="About" classname="px-3 py-3  bg-[#FFD900]" />
+    <Link to="/Aboutus"> <Button btntext="About" classname="px-3 py-3  bg-[#FFD900]" /></Link>   
         <Button btntext="Services" classname="px-3 py-3  bg-[#FFD900]" />
       </div>
 
