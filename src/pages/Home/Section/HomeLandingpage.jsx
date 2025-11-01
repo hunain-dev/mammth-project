@@ -16,14 +16,14 @@ const HomeLandingpage = () => {
     <span>impossible to ignore <span>.</span> </span>
   </div>
 </div>
-        <div className='h-full    flex items-start  justify-end flex-col mt-30 gap-3 p-13'>
+        <div className='h-full    flex items-start  justify-end flex-col mt-30 gap-1 p-6'>
             <Video/>
             <h2 className='SuisseIntl font-[600] text-[1.2vw]'>Show reel (2023__2025) </h2>
         </div>
       
       
     </div>
-    <div className='mt-44'>
+    <div className='mt-32'>
         <h3 className='SuisseIntl text-[1.6vw] font-[600]'>We paint bold, handle-crafted walls for real
          <br />
          estate developer designer-driven
@@ -40,10 +40,10 @@ const HomeLandingpage = () => {
         </div>
     </div>
 
-    <div className=' w-full  mt-15'>
+    <div className='w-full  mt-15'>
         <img src={wallframe} alt="" className='h-180 w-full object-cover' />
     </div>
-<div className='mt-3 py-15'>
+<div className=' py-11'>
 <Ourpartners/>
 
 </div>

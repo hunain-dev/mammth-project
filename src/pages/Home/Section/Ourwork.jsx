@@ -10,18 +10,18 @@ const Ourwork = () => {
 
       <div className="h-full w-full relative">
       <div className="w-full relative">
-        <Biggertext text="Our work"  classname="text-[35vw] leading-99" />
+        <Biggertext text="Our work"  classname="text-[36vw] leading-99" />
         <div className='absolute top-14 left-0 flex justify-center items-center w-full h-full'>
-          <Bacgkrondanimate text={<>
+          <Bacgkrondanimate  text={<>
             
             Don’t let blank walls waste potential. <br />
 See how our clients turn empty space into <br /> buzz, foot traffic, and business results.
             </>} />
         </div>
-        {/* <Cards/> */}
+      
       </div>
     </div>
-    <div className='mt-52 '>
+    <div className='mt-30 '>
     <Cards/>
 
     </div>

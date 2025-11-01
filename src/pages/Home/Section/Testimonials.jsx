@@ -30,17 +30,17 @@ const Testimonials = () => {
  <>
  <div className=' w-full'>
  <div className=' w-full flex items-center justify-start flex-col'>
-  <h3 className='uppercase  font-[600] SuisseIntl text-1xl'>hear from our clients</h3>
+  <h3 className='uppercase  font-[500] SuisseIntl text-1xl'>hear from our clients</h3>
 
   <div className='w-full relative'> {/* ← relative yahan zaroori hai */}
     <div className='relative '>
-    <Biggertext text="Testimonials" classname="text-[27.4vw] leading-73"/> 
+    <Biggertext text="Testimonials" classname="text-[27.4vw] leading-65"/> 
        </div>
 
     {/* black overlay */}
-    <div className=' w-full absolute top-0 left-0 px-3 flex flex-col justify-between'>
+    <div className=' w-full absolute top-0 left-0  flex flex-col justify-between'>
   {/* top-left sprite */}
-  <div className="relative self-start -mt-18">
+  <div className="relative self-start -mt-13">
     <div className="u-spritetets u-sprite-quote"></div>
   </div>
 
@@ -50,7 +50,7 @@ const Testimonials = () => {
   </div>
 </div>
 
-<div className=' w-full text-center mt-39'>
+<div className=' w-full text-center mt-25'>
  <h2 className='SuisseIntl text-[1.3vw] leading-7git inti font-[600]'>From national campaigns to neighborhood landmarks, hear <br /> how our clients use hand-painted murals to boost visibility, <br /> build trust, and make a bold first impression that lasts.</h2> 
 </div>
 
@@ -61,7 +61,7 @@ const Testimonials = () => {
   
 </div>
 
-<div className='  w-full  mt-20 px-20 grid gap-16 grid-cols-3'>
+<div className='  w-full  mt-20 px-2 grid gap-16 grid-cols-3'>
   {
     obj.map((elem,index)=>{
       return(

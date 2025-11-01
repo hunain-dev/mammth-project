@@ -4,7 +4,7 @@ import Biggertext from "./Biggertext";
 
 const Footer = () => {
   return (
-    <div className=" w-full px-10">
+    <div className=" w-full px-9">
       <div className=" w-full flex items-center justify-between ">
         <Textanimation text="Home" classname="text-black text-[5vw]" />
         <Textanimation text="Work" classname="text-black text-[5vw]" />
@@ -47,10 +47,10 @@ const Footer = () => {
             />
           </div>
         </div>
-        <div className=" w-full  mt-4">
-          <div className="h-full w-full relative">
-            <Biggertext text="Mammoth" classname="text-[35.4vw] leading-80 " />
-            <Biggertext text="Murals" classname="text-[46.5vw] leading-189 " />
+        <div className=" w-full   ">
+          <div className="h-full w-full relative  ">
+            <Biggertext text="Mammoth" classname="text-[36vw] leading-103 " />
+            <Biggertext text="Murals" classname="text-[46.3vw] leading-129 " />
             <div className="absolute bottom-70 left-0 w-full h-[50vh] flex justify-center items-center overflow-hidden">
               {/* Sprite animation */}
               <div className="footer_bottom_deco_wrap u-sprite u-spritefooters u-sprite-footer"></div>

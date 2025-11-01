@@ -227,7 +227,7 @@ body {
     background-position: calc(-1 * var(--sprite-width)) 0;
   }
 }
-
+/* 
 
 
 @keyframes spriteFramesss {
@@ -258,4 +258,4 @@ body {
   overflow: hidden;
 
   animation: spriteFramesss var(--animation-duration) steps(4, end) infinite;
-} 
+}  */

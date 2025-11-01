@@ -12,7 +12,7 @@ const Bacgkrondanimate = ({text}) => {
                   "--frame-count": "4",
                   "--animation-duration": "0.5s",
                 }}>
-                    <h2 className='SuisseIntl font-[600] text-4xl'>{text}
+                    <h2 className='SuisseIntl font-[600] text-3xl'>{text}
 
                     </h2>
                 </div>

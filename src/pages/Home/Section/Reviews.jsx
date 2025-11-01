@@ -24,14 +24,14 @@ const Reviews = () => {
           {[...Array(5)].map((_, i) => (
             <Star
               key={i}
-              className="fill-yellow-400 text-yellow-400 w-10 h-10"
+              className="fill-yellow-400 text-yellow-400 w-6 h-6"
             />
           ))}
         </div>
       </div>
 
       {/* Quote Section */}
-      <blockquote className="text-center SuisseIntl  text-[#FFF6E5] font-[600] max-w-6xl leading-14 text-[3.3vw]">
+      <blockquote className="text-center SuisseIntl  text-[#FFF6E5] font-[600] max-w-5xl leading-12 text-[3.3vw]">
         “Fantastic artistry topped off with great communication and service.
         Andrew, Shane, and the team were very professional and obviously
         extremely talented.”

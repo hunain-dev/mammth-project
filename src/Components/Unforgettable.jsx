@@ -17,7 +17,7 @@ const Unforgettable = () => {
         <div className='pt-23 px-20 w-full '>
             <div className='h-full w-full flex items-center justify-center relative '>
             <Biggertext text={<>
-                Let paint  something <br />Unforgettable</>} classname="text-[11.5vw] text-[#FFF6E5] leading-44"/> 
+                Let paint  something <br />Unforgettable</>} classname="text-[11.5vw] text-center text-[#FFF6E5] leading-36"/> 
 
                 <div className="h-full w-full absolute top-0 left-0 flex justify-between px-10">
         {/* LEFT sprite box */}
@@ -30,11 +30,11 @@ const Unforgettable = () => {
       </div>
             </div>
 
-            <div className=' mt-16 w-full  flex items-center gap-9 justify-start flex-col'>
-                <h3 className='SuisseIntl text-white font-[600] text-[1.3vw] leading-7'>Let’s talk strategy, locations, and how a mural <br /> can give your brand a powerful local presence.
+            <div className=' mt-11 w-full  flex items-center gap-9 justify-start flex-col'>
+                <h3 className='SuisseIntl text-[#FFF6E5] text-center font-[400] text-[1.3vw] leading-7'>Let’s talk strategy, locations, and how a mural <br /> can give your brand a powerful local presence.
 
 </h3>
-<Button imgsrc={Kindman} btntext="Book a discovery call"  classname="px-4 py-3 bg-white text-black" />
+<Button imgsrc={Kindman} btntext="Book a discovery call"  classname="px-4 py-2 bg-white text-black" />
 
 
             </div>

@@ -11,7 +11,7 @@ const AboutLanding = () => {
       />
 
       {/* Stop-motion sprite animation */}
-      <div className="w-full absolute left-0 flex top-60 items-center justify-center ">
+      <div className="w-full absolute left-0 flex top-40 items-center justify-center ">
         <div className="hero_about_stop-motionss"></div>
       </div>
 

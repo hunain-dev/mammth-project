@@ -3,6 +3,7 @@ import LocomotiveScroll from "locomotive-scroll";
 import Home from "./pages/Home/Section/Home";
 import Work from "./pages/Home/Work/Section/Work";
 import Aboutus from "./pages/About/Section/Aboutus";
+import Services from "./pages/Services/Section/Services";
 
 const App = () => {
     const locomotiveScroll = new LocomotiveScroll();
@@ -13,6 +14,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/work" element={<Work />} />
         <Route path="/Aboutus" element={<Aboutus />} />
+        <Route path="/Services" element={<Services />} />
       </Routes>
     </div>
   );

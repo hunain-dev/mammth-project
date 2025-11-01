@@ -73,13 +73,13 @@ const Faqs = () => {
 
  </div>
     <div className=" h-full">
-        <h2 className='ObviouslyDemo uppercase text-[12vw] leading-45 font-[600] text-[#120011]'>Frequently <br /> Asked Questions</h2>
+        <h2 className='ObviouslyDemo uppercase text-[12vw] leading-35 font-[600] text-[#120011]'>Frequently <br /> Asked Questions</h2>
 
         <div className=' w-full grid lg:grid-cols-1 grid-cols-1  md:grid-cols-2 lg:px-1 px-0 lg:mt-22 lg:pb-0 md:pb-22 pb-40 '>
        
         <div  className='h-full '>
            <div className="lg:py-1 py-9 lg:px-1 px-4">
-      <div className="lg:space-y-5 space-y-10">
+      <div className="lg:space-y-4 space-y-10">
         {Faqss.map((faq, index) => (
           <div
             key={index}
