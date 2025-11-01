@@ -22,7 +22,8 @@ const Header = () => {
       </div>
 
         <div className='h-full  flex items-center justify-end'>
-        <Button imgsrc={Kindman} btntext="Chat with us"  classname="px-4 py-2 bg-black text-white" />
+        <Button imgsrc={Kindman}   link="https://calendly.com/mammothmurals/meeting-with-andrew-clone"
+ btntext="Chat with us"  classname="px-4 py-2 bg-black text-white" />
 
         </div>
     </div>

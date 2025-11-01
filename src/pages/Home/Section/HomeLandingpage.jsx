@@ -34,8 +34,8 @@ const HomeLandingpage = () => {
 
         </h3>
         <div className='flex items-center justify-start gap-3 mt-6'>
-        <Button  imgsrc={Kindman} btntext="Book a discovery call"  classname="px-4 py-3 bg-black text-white" />
-        <Button btntext="See our work" classname="px-3 py-3" />
+        <Button  imgsrc={Kindman} link="https://calendly.com/mammothmurals/meeting-with-andrew-clone" btntext="Book a discovery call"  classname="px-4 py-3 bg-black text-white" />
+        <Button btntext="See our work" link="/Work" classname="px-3 py-3" />
 
         </div>
     </div>

@@ -4,6 +4,7 @@ import Home from "./pages/Home/Section/Home";
 import Work from "./pages/Home/Work/Section/Work";
 import Aboutus from "./pages/About/Section/Aboutus";
 import Services from "./pages/Services/Section/Services";
+import DetailsCom from "./Components/DetailsCom";
 
 const App = () => {
     const locomotiveScroll = new LocomotiveScroll();
@@ -15,7 +16,8 @@ const App = () => {
         <Route path="/work" element={<Work />} />
         <Route path="/Aboutus" element={<Aboutus />} />
         <Route path="/Services" element={<Services />} />
-      </Routes>
+        <Route path="/DetailsCom/:id" element={<DetailsCom />} />
+        </Routes>
     </div>
   );
 };

@@ -66,7 +66,7 @@ const Testimonials = () => {
     obj.map((elem,index)=>{
       return(
 <div key={index} className=' ' style={{backgroundColor:elem.bgcolor}}>
-    <div className='w-full  border-3 border-black border-dotted p-5  ' style={{backgroundColor:elem.innercolor}}>
+    <div className='w-full  border-3 border-black border-dotted p-3  ' style={{backgroundColor:elem.innercolor}}>
       <img src={elem.image} className='h-140 w-full object-cover' alt="" />
     </div>
     <h5 className='SuisseIntl text-[1.2vw] mt-3 font-[550]'>{elem.paragh}</h5>

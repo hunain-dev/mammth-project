@@ -36,7 +36,7 @@ const Ourexpereince = () => {
   {obj.map((elem, index) => (
     <div
       key={index}
-      className="w-full grid grid-cols-3 px-2 py-2 border-t-5  border-black"
+      className="w-full grid grid-cols-3 px-2  border-t-5  border-black"
     >
       <div className="h-full">
         <h2 className="ObviouslyDemo text-[11vw] leading-40 font-[600]">
@@ -45,13 +45,13 @@ const Ourexpereince = () => {
       </div>
 
       <div className="h-full">
-        <h2 className="ObviouslyDemo text-[9.6vw] text-[#120011] leading-40 font-[600] uppercase text-center">
+        <h2 className="ObviouslyDemo text-[9.3vw] text-[#120011] leading-40 font-[600] uppercase text-center">
           {elem.text}
         </h2>
       </div>
 
       <div className="h-full w-full flex items-center justify-end">
-        <img src={elem.img} className="h-50 object-cover" alt="" />
+        <img src={elem.img} className="h-40 object-cover" alt="" />
       </div>
     </div>
   ))}

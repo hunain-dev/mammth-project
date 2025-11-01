@@ -47,16 +47,20 @@ const Footer = () => {
             />
           </div>
         </div>
-        <div className=" w-full   ">
-          <div className="h-full w-full relative  ">
-            <Biggertext text="Mammoth" classname="text-[36vw] leading-103 " />
-            <Biggertext text="Murals" classname="text-[46.3vw] leading-129 " />
-            <div className="absolute bottom-70 left-0 w-full h-[50vh] flex justify-center items-center overflow-hidden">
-              {/* Sprite animation */}
-              <div className="footer_bottom_deco_wrap u-sprite u-spritefooters u-sprite-footer"></div>
-              </div>
-          </div>
-        </div>
+
+        <div className="h-full w-full">
+        <div className="backtext relative h-full pb-20  w-full flex flex-col items-center justify-center text-center overflow-hidden">
+        <Biggertext text="Mammoth" classname="text-[35vw] leading-[20vw]" />
+  <Biggertext text="Murals" classname="text-[46vw] leading-[42vw]" />
+  <div className="flex items-center justify-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+  <div className="footer_bottom_deco_wrap u-spritefooterss u-sprite-footers"></div>
+</div>
+
+  </div>
+
+</div>
+
+     
       </div>
     </div>
   );
