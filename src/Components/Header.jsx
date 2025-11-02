@@ -8,9 +8,7 @@ const Header = () => {
     <div className=" px-8 py-6 z-[999] fixed  flex items-center justify-between  w-full ">
       <div className="p-1 bg-black rounded-1xl">
         <div className="-mt-1">
-          <Link to="/">
-            {" "}
-            <Textaniamtion
+          <Link to="/">            <Textaniamtion
               text="MAMMOTH MURALS"
               classname="text-white text-[2.2vw]"
             />
@@ -19,7 +17,7 @@ const Header = () => {
       </div>
 
       <div className="h-full  flex items-center justify-end gap-3">
-        <Link to="/Work">
+        <Link   to="/Work">
           <Button btntext="Work" classname="px-3 py-2 bg-[#FFD900]" />
         </Link>
         <Link to="/Aboutus">
