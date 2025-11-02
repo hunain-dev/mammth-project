@@ -79,14 +79,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
 .u-spritetets {
   --sprite-url: '';
 
@@ -183,6 +175,8 @@ body {
 
 
 /* === SPRITE CONFIGURATION === */
+
+
 .u-sprite-footers {
   --sprite-url: url("/src/assets/images/Footer.png");
   
@@ -237,3 +231,63 @@ body {
 
   animation: spriteFramesss var(--animation-duration) steps(4, end) infinite;
 }   
+
+
+
+
+
+
+/* LOader */
+
+
+
+
+
+.u-sprite-loader {
+  --sprite-url: url("/src/assets/images/Footer.png");
+  
+}
+
+.u-spriteloader {
+  --sprite-width: 45vw;
+  --sprite-height: 25vh;
+  --frame-count: 4; 
+  --frame-width: calc(var(--sprite-width) / var(--frame-count));
+  --animation-duration: 0.8s;
+
+  width: var(--frame-width);
+  height: var(--sprite-height);
+  background-image: var(--sprite-url);
+  background-size: var(--sprite-width) var(--sprite-height);
+  background-repeat: no-repeat;
+  overflow: hidden;
+  animation: spriteFramesss var(--animation-duration) steps(var(--frame-count), end) infinite;
+}
+
+
+
+/* Smileloader */
+
+
+
+.u-sprite-smile {
+  --sprite-url: url("/src/assets/images/Smileloader.png");
+  
+}
+
+.u-spritesmile {
+  --sprite-width: 23vw;
+  --sprite-height: 13vh;
+  --frame-count: 4; 
+  --frame-width: calc(var(--sprite-width) / var(--frame-count));
+  --animation-duration: 0.8s;
+
+  width: var(--frame-width);
+  height: var(--sprite-height);
+  background-image: var(--sprite-url);
+  background-size: var(--sprite-width) var(--sprite-height);
+  background-repeat: no-repeat;
+  overflow: hidden;
+  animation: spriteFramesss var(--animation-duration) steps(var(--frame-count), end) infinite;
+}
+

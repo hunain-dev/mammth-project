@@ -6,10 +6,12 @@ import Header from './Components/Header.jsx'
 import Footer from './Components/Footer.jsx'
 import { BrowserRouter } from 'react-router-dom'
 import Cursor from './Components/Cursor.jsx'
+import Loader from './Components/Loader.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
+    <Loader/>
     <Cursor/>
 
     <Header/>
