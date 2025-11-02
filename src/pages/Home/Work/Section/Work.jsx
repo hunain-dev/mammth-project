@@ -38,8 +38,8 @@ const Work = () => {
           .filter((card) => card.category === active)
           .slice(0, 3); // 3 cards each category
   return (
-    <div className=' w-full pt-37  '>
-        <div className='pb-120 px-15'>
+    <div className=' w-full pt-27  '>
+        <div className='pb-80 px-15'>
         <WorkLanding/>
 
         </div>

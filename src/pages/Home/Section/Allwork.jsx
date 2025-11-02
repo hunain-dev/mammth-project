@@ -1,14 +1,15 @@
 import React from "react";
 import building from "../../../assets/images/building.png";
+import { Link } from "react-router-dom";
 
 const Allwork = () => {
   return (
     <div className="w-full flex items-center justify-end py-10">
       <div className="max-w-[52vw]">
-        <h3 className="ObviouslyDemo text-8xl pb-5 leading-none">
+       <Link to="/Work"><h3 className="ObviouslyDemo border-b-6 border-black text-8xl pb-2 leading-none">
           View all work
-        </h3>
-        <div className="relative overflow-hidden rounded-2xl">
+        </h3></Link> 
+        <div className="relative mt-4 overflow-hidden rounded-2xl">
           <img
             src={building}
             className="w-full h-auto object-cover"

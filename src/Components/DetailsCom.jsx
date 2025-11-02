@@ -101,9 +101,8 @@ const obj = [
 
  
     {
-        bgcolor:"blue",
         text:"why love me bruh",
-        // image:"https://cdn.prod.website-files.com/6881fafa34e37145092525b4/68a949454d5ec4b4de7540ae_cocacolaamphitheater-1.avif"
+        image:"https://cdn.prod.website-files.com/6881fafa34e37145092525b4/68a949454d5ec4b4de7540ae_cocacolaamphitheater-1.avif"
 
     },
 ]

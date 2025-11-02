@@ -1,16 +1,25 @@
 import React from "react";
 import Textanimation from "./textaniamtion";
 import Biggertext from "./Biggertext";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <div className=" w-full px-9">
       <div className=" w-full flex items-center justify-between ">
-        <Textanimation text="Home" classname="text-black text-[5vw]" />
-        <Textanimation text="Work" classname="text-black text-[5vw]" />
-        <Textanimation text="About" classname="text-black text-[5vw]" />
+      <Link to="/"><Textanimation text="Home" classname="text-black text-[5vw]" /></Link>  
+     <Link to="/Work"> <Textanimation text="Work" classname="text-black text-[5vw]" /></Link>  
+     <Link to="/About">         <Textanimation text="About" classname="text-black text-[5vw]" />
+     </Link >  
+
+        <Link to="Services">
         <Textanimation text="Services" classname="text-black text-[5vw]" />
-        <Textanimation text="Contact" classname="text-black text-[5vw]" />
+
+        </Link>   
+     <Link to="Contact">
+     <Textanimation text="Contact" classname="text-black text-[5vw]" />
+
+     </Link>  
       </div>
 
       <div className=" w-full mt-34">

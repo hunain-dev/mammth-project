@@ -217,7 +217,7 @@ body {
 
 
 
-/* .hero_about_stop-motionss {
+.hero_about_stop-motionss {
   @apply pointer-events-none absolute;
   top: 2.9vw;
   transform-origin: 50% 0;
@@ -236,4 +236,4 @@ body {
   overflow: hidden;
 
   animation: spriteFramesss var(--animation-duration) steps(4, end) infinite;
-}   */
+}   

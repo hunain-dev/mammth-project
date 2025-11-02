@@ -11,7 +11,7 @@ const Button = ({ btntext, classname, imgsrc, link }) => {
         href={link}
         target="_blank"
         rel="noopener noreferrer"
-        className={`group relative overflow-hidden cursor-pointer SuisseIntl uppercase text-[1vw] border border-black text-black flex items-center justify-center gap-2 ${classname}`}
+        className={`group relative overflow-hidden cursor-pointer SuisseIntl uppercase  border border-black text-black flex items-center justify-center gap-2 ${classname}`}
       >
         {imgsrc && (
           <img
