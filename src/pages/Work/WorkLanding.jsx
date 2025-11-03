@@ -1,6 +1,6 @@
 import React from 'react'
-import Biggertext from '../../../Components/Biggertext'
-import Bacgkrondanimate from '../../../Components/Bacgkrondanimate'
+import Biggertext from '../../Components/Biggertext'
+import Bacgkrondanimate from '../../Components/Bacgkrondanimate'
 
 const WorkLanding = () => {
   return (

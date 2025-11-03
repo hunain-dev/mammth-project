@@ -1,12 +1,11 @@
 import { Routes, Route } from "react-router-dom";
 import LocomotiveScroll from "locomotive-scroll";
-import Home from "./pages/Home/Section/Home";
-import Work from "./pages/Home/Work/Section/Work";
 import Aboutus from "./pages/About/Section/Aboutus";
 import Services from "./pages/Services/Section/Services";
 import DetailsCom from "./Components/DetailsCom";
 import Contact from "./pages/Contact/Section/Contact";
-
+import Home from "./pages/Home/Section/Home"
+import Work from "./pages/Work/Section/Work"
 const App = () => {
     const locomotiveScroll = new LocomotiveScroll();
 

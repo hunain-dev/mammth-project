@@ -22,7 +22,6 @@ const Cards = () => {
     },
     {
       id: 3,
-
       img: building,
       text: "Axel row",
     },
@@ -51,6 +50,8 @@ const Cards = () => {
         return (
           <Link
           to={`/DetailsCom/${elem.id}`}
+          state={{ card: elem }} 
+
             key={index}
             className="h-full w-full"
             style={{ backgroundColor: elem.backgoruncolor }}
@@ -59,7 +60,7 @@ const Cards = () => {
               <img
                 src={elem.img}
                 alt={elem.text}
-                className="h-full w-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:scale-80"
+                className="h-full w-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:scale-80 hover:bg-red-400"
               />
             </div>
             <div className=" flex items-center justify-between w-full">

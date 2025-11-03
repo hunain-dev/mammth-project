@@ -13,7 +13,6 @@ createRoot(document.getElementById('root')).render(
     <BrowserRouter>
     <Loader/>
     <Cursor/>
-
     <Header/>
     <App />
     <Footer/>

@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 import WorkLanding from '../WorkLanding'
-import Unforgettable from '../../../../Components/Unforgettable'
-import card1 from "../../../../assets/images/first-card.png";
-import last from "../../../../assets/images/last.png";
-import fifththlast from "../../../../assets/images/5thlast.png";
-import secondlast from "../../../../assets/images/2ndlast.png";
-import thirdlast from "../../../../assets/images/3rdlast.png";
-import building from "../../../../assets/images/building.png";
+import card1 from "../../../assets/images/first-card.png";
+import last from "../../../assets/images/last.png";
+import fifththlast from "../../../assets/images/5thlast.png";
+import secondlast from "../../../assets/images/2ndlast.png";
+import thirdlast from "../../../assets/images/3rdlast.png";
+import building from "../../../assets/images/building.png";
+import Unforgettable from '../../../Components/Unforgettable';
 const Work = () => {
 
 
@@ -44,8 +44,7 @@ const Work = () => {
 
         </div>
         <div className="w-full grid grid-cols-[18%_80%] px-6 gap-6">
-      {/* ✅ Left Filter Menu */}
-      <div className="SuisseIntl text-[1vw] font-[600] uppercase flex flex-col  p-3 text-white rounded-2xl">
+      <div className="SuisseIntl text-[1vw] font-[600] uppercase flex flex-col leading-4npm r  text-white rounded-2xl">
         {filters.map((elem, index) => (
           <h3
             key={index}
