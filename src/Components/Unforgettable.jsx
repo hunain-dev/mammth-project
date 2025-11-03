@@ -1,6 +1,6 @@
 import React from "react";
 import Biggertext from "./Biggertext";
-import Button from "./button";
+import Button from "./ReuseButton";
 import Kindman from "../assets/images/Kindman.jpg";
 import { Link } from "react-router-dom";
 

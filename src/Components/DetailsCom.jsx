@@ -73,6 +73,59 @@ const DetailsCom = () => {
 
         ],
       },
+
+
+      {
+        id: 4,
+        title: [<>
+Culinary dropout 
+
+    </>],   
+             client: "",
+        location: "BIRMINGHAM, ALABAMA",
+        service: "MURALS",
+        completionDate: "2025",
+        images: [
+          "https://cdn.prod.website-files.com/6881fafa34e37145092525b4/68a94b372ce4160cb3692c1b_culinarydropout1-2.avif",
+
+        ],
+      },
+
+
+      {
+        id: 5,
+        title: [<>
+South Eastern
+
+
+    </>],   
+             client: "",
+        location: "BIRMINGHAM, ALABAMA",
+        service: "MURALS",
+        completionDate: "2025",
+        images: [
+          "https://cdn.prod.website-files.com/6881fafa34e37145092525b4/68a94b6a716f312d1debcc6c_IMG_4225.avif",
+
+        ],
+      },
+
+      {
+        id: 6,
+        title: [<>
+Mountaintop
+
+
+    </>],   
+             client: "",
+        location: "BIRMINGHAM, ALABAMA",
+        service: "MURALS",
+        completionDate: "2025",
+        images: [
+          "https://cdn.prod.website-files.com/6881fafa34e37145092525b4/68a94b6a716f312d1debcc6c_IMG_4225.avif",
+
+        ],
+      },
+
     ]
 
     const data = obj.find((item) => item.id === Number(id));
@@ -113,7 +166,7 @@ const DetailsCom = () => {
     <div ref={wrapperRef} className="flex mt-7 h-full items-start">
       {/* Info Section */}
       <div className="card min-w-[55vw] px-7   flex flex-col justify-start text-black ">
-      <h1 className="ObviouslyDemo text-[#120011] uppercase font-bold text-[11vw] leading-33"> {data.title} </h1>
+      <h1 className="ObviouslyDemo text-[#120011] uppercase font-bold text-[10.3vw] leading-33"> {data.title} </h1>
         <div className="w-full mt-10 flex items-start justify-start gap-32">
           <div className="space-y-2">
             <h5>{data.client}</h5>
@@ -136,7 +189,7 @@ const DetailsCom = () => {
           <img
             src={img}
             alt=""
-            className="h-full w-full mx-30 p-2 object-contain rounded-xl"
+            className="h-full w-full mx-30 p-3 object-cover rounded-xl"
           />
         </div>
       ))}

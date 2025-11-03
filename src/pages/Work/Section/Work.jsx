@@ -7,6 +7,7 @@ import secondlast from "../../../assets/images/2ndlast.png";
 import thirdlast from "../../../assets/images/3rdlast.png";
 import building from "../../../assets/images/building.png";
 import Unforgettable from '../../../Components/Unforgettable';
+import { Link } from 'react-router-dom';
 const Work = () => {
 
 
@@ -61,31 +62,37 @@ const Work = () => {
       </div>
 
       {/* ✅ Right Cards Section */}
-      <div className="px-3 w-full grid gap-4 grid-cols-2">
-        {filteredCards.map((elem, index) => (
-          <div key={index} className="h-full w-full">
-            {/* Image Section */}
-            <div className="pb-3 bg-black w-full overflow-hidden group rounded-xl">
-              <img
-                src={elem.img}
-                alt=""
-                className="h-full w-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:scale-110"
-              />
-            </div>
+    
+<div className="px-3 w-full grid gap-4 grid-cols-2">
+  {filteredCards.map((elem, index) => (
+    <Link
+      key={index}
+      to={`/DetailsCom/${elem.id}`}
+      state={{ card: elem }}     >
+      <div className="h-full w-full">
+        {/* Image Section */}
+        <div className="pb-3 bg-black w-full overflow-hidden group rounded-xl">
+          <img
+            src={elem.img}
+            alt={elem.text}
+            className="h-full w-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:scale-110"
+          />
+        </div>
 
-            {/* Text Section */}
-            <div className="flex items-center justify-between w-full">
-              <h2 className="ObviouslyDemo uppercase text-2xl">
-                {elem.text}
-              </h2>
-              <div className="py-1 px-3 border-2 border-black flex items-center justify-center gap-3 border-b-4">
-                <h4 className="ObviouslyDemo text-[1rem]">2025</h4>
-                <h4 className="ObviouslyDemo text-[1rem]">{elem.category}</h4>
-              </div>
-            </div>
+        {/* Text Section */}
+        <div className="flex items-center justify-between w-full">
+          <h2 className="ObviouslyDemo uppercase text-2xl">
+            {elem.text}
+          </h2>
+          <div className="py-1 px-3 border-2 border-black flex items-center justify-center gap-3 border-b-4">
+            <h4 className="ObviouslyDemo text-[1rem]">2025</h4>
+            <h4 className="ObviouslyDemo text-[1rem]">{elem.category}</h4>
           </div>
-        ))}
+        </div>
       </div>
+    </Link>
+  ))}
+</div>
     </div>
 
 <div className='mt-21 px-9'>

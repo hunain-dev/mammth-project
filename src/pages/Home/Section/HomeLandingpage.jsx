@@ -3,7 +3,7 @@ import Video from '../../../Components/Video'
 import Kindman from "../../../assets/images/Kindman.jpg"
 import wallframe from "../../../assets/images/wallframe.jpg"
 import Ourpartners from '../../../Components/Ourpartners'
-import Button from '../../../Components/button'
+import Button from '../../../Components/ReuseButton'
 const HomeLandingpage = () => {
   return (
     <>

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Button = ({ btntext, classname, imgsrc, link }) => {
+const ReuseButton = ({ btntext, classname, imgsrc, link }) => {
   const isExternal = link?.startsWith("http");
 
   // agar link http ya https se start hota hai, to anchor tag use hoga
@@ -49,4 +49,4 @@ const Button = ({ btntext, classname, imgsrc, link }) => {
   );
 };
 
-export default Button;
+export default ReuseButton;

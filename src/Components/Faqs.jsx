@@ -1,6 +1,6 @@
 import React from 'react'
 import Kindman from "../assets/images/Kindman.jpg"
-import Button from "../Components/button"
+import Button from "./ReuseButton"
 import  { useState } from "react";
 
 const Faqss = [
