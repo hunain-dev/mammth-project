@@ -3,8 +3,12 @@ import Biggertext from "./Biggertext";
 import Button from "./ReuseButton";
 import Kindman from "../assets/images/Kindman.jpg";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import gsap from "gsap";
 
 const Unforgettable = () => {
+  const cardsRef = useRef([]);
+
   const containerRef = useRef(null);
 
   const images = [
@@ -16,7 +20,41 @@ const Unforgettable = () => {
   ];
 
 
+  useEffect(() => {
+    // Default GSAP setup for 3D effect
+    gsap.set(cardsRef.current, {
+      transformStyle: "preserve-3d",
+      perspective: 500,
+    });
 
+    cardsRef.current.forEach((card) => {
+      // Hover In → card moves forward (z-axis)
+      card.addEventListener("mouseenter", () => {
+        gsap.to(card, {
+          duration: 0.1,
+          z: 30, // 👈 card moves forward
+          scale: 0.9,
+          rotateY: 4,
+          rotateX: -1,
+          ease: "power2.out",
+          boxShadow: "0px 20px 40px rgba(0,0,0,0.4)",
+        });
+      });
+
+      // Hover Out → card moves back (original position)
+      card.addEventListener("mouseleave", () => {
+        gsap.to(card, {
+          duration: 0.3,
+          z: 100, // 👈 card moves back
+          scale: 1,
+          rotateY: 0,
+          rotateX: 0,
+          ease: "power3.out",
+          boxShadow: "0px 0px 0px rgba(0,0,0,0)",
+        });
+      });
+    });
+  }, []);
 
 
   return (
@@ -68,6 +106,7 @@ const Unforgettable = () => {
               {images.map((img, index) => (
                 <div
                   key={index}
+                  ref={(el) => (cardsRef.current[index] = el)}
                   className="group relative w-84 h-79 py-8 transition-transform duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]"
                   style={{
                     transform: `rotate(${index % 2 === 0 ? "-4" : "4"}deg)`,

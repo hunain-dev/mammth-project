@@ -34,7 +34,6 @@ const App = () => {
         <Route path="/Services" element={<Services />} />
         <Route path="/Contact" element={<Contact />} />
 
-        {/* ✅ yeh line galat jagah thi, sirf yahan Route hona chahiye */}
         <Route path="/DetailsCom/:id" element={<DetailsCom />} />
       </Routes>
     </div>

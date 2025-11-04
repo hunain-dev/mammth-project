@@ -1,7 +1,47 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import Biggertext from '../../Components/Biggertext'
+import { useEffect } from 'react';
+import gsap from 'gsap';
 
 const ServicesLanding = () => {
+  const cardsRef = useRef([]);
+
+  useEffect(() => {
+    // Default GSAP setup for 3D effect
+    gsap.set(cardsRef.current, {
+      transformStyle: "preserve-3d",
+      perspective: 500,
+    });
+
+    cardsRef.current.forEach((card) => {
+      // Hover In → card moves forward (z-axis)
+      card.addEventListener("mouseenter", () => {
+        gsap.to(card, {
+          duration: 0.1,
+          z: 30, // 👈 card moves forward
+          scale: 0.9,
+          rotateY: 4,
+          rotateX: -1,
+          ease: "power2.out",
+          boxShadow: "0px 20px 40px rgba(0,0,0,0.4)",
+        });
+      });
+
+      // Hover Out → card moves back (original position)
+      card.addEventListener("mouseleave", () => {
+        gsap.to(card, {
+          duration: 0.3,
+          z: 100, // 👈 card moves back
+          scale: 1,
+          rotateY: 0,
+          rotateX: 0,
+          ease: "power3.out",
+          boxShadow: "0px 0px 0px rgba(0,0,0,0)",
+        });
+      });
+    });
+  }, []);
+
   return (
     <div className=' w-full grid grid-cols-1'>
         <div className='h-full w-fit'>
@@ -22,16 +62,16 @@ const ServicesLanding = () => {
 
   <div className='h-full '>
     <div className=' w-full bg-black relative'>
-      <img
+      <img ref={cardsRef.current}
         src="https://cdn.prod.website-files.com/6870db6428fa0046e4e9dc88/6889e96d1443e0fe12d71eff_CleanShot%202024-11-09%20at%2015.00.44-11.avif"
-        className='h-171 w-full object-cover'
+        className='h-173 w-full object-cover'
         alt=""
       />
  <div className='absolute -top-4 -right flex items-end justify-center flex-col -right-30  min-w-[70%]'>
-     <div className='h-[21vh]  -rotate-12'>
+     <div className='h-[25vh]  -rotate-12'>
         <img src="https://cdn.prod.website-files.com/6870db6428fa0046e4e9dc88/6889e9c52c0d897b9c42c1c4_CleanShot%202024-11-09%20at%2015.00.44-12.avif" className='h-full  object-cover rounded-1xl' alt="" />
      </div>
-     <div className='h-[21vh]  rotate-12'>
+     <div className='h-[25vh]  rotate-12'>
         <img src="https://cdn.prod.website-files.com/6870db6428fa0046e4e9dc88/6889e9d762f84d507b9fe888_ShaneBinAction%201.avif" className='h-full w-full object-cover rounded-1xl' alt="" />
      </div> </div>
     </div>

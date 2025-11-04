@@ -28,7 +28,6 @@ const Biggertext = ({ text, classname, children }) => {
     });
   }, [raw]);
 
-  // Convert content into spans (handle <br /> safely)
   const renderContent = (content) => {
     if (typeof content === "string") {
       return content.split("").map((ch, i) => {

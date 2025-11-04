@@ -291,3 +291,36 @@ body {
   animation: spriteFramesss var(--animation-duration) steps(var(--frame-count), end) infinite;
 }
 
+
+
+/* Services aniamtin */
+
+.process_services_bg.u-sprite-ser.u-sprite-bg {
+  z-index: 0;
+  transform-origin: 50%;
+  position: absolute;
+  inset: -35% 4% auto auto;
+  transform: translate(50%, 50%);
+}
+
+.u-sprite-bg {
+  --sprite-url: url(/src/assets/images/Servicesaniamton.png);
+  --sprite-width: 3072.03px;
+  --sprite-height: 543.75px;
+}
+
+
+.u-sprite-ser {
+  --sprite-url: '';
+  --sprite-width: 100px;
+  --sprite-height: 100px;
+  --frame-width: calc(var(--sprite-width) / 4);
+  --animation-duration: 0.5s;
+  width: var(--frame-width);
+  height: var(--sprite-height);
+  background-image: var(--sprite-url);
+  background-size: var(--sprite-width) var(--sprite-height);
+  background-repeat: no-repeat;
+  overflow: hidden;
+  animation: spriteFrames var(--animation-duration) steps(4, end) infinite;
+}
