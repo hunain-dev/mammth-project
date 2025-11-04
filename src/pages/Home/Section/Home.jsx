@@ -7,10 +7,13 @@ import Testimonials from './Testimonials'
 import Reviews from './Reviews'
 import Faqs from '../../../Components/Faqs'
 import Unforgettable from '../../../Components/Unforgettable'
+import Loader from '../../../Components/Loader'
 
 const Home = () => {
   return (
     <div className='w-full'>
+      <Loader/>
+
       <div className='pt-33 px-8  bg-[#FFD900]'>
       <HomeLandingpage />
 

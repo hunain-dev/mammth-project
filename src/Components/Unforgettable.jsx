@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useRef } from "react";
 import Biggertext from "./Biggertext";
 import Button from "./ReuseButton";
 import Kindman from "../assets/images/Kindman.jpg";
 import { Link } from "react-router-dom";
 
 const Unforgettable = () => {
+  const containerRef = useRef(null);
+
   const images = [
     "https://cdn.prod.website-files.com/6870db6428fa0046e4e9dc88/689c26557112b0b4ad079ab3_CleanShot%202024-11-09%20at%2015.00.44-3.avif",
     "https://cdn.prod.website-files.com/6870db6428fa0046e4e9dc88/68aa749e9107055055ad0396_cocacolaamphitheater-34.avif",
@@ -12,6 +14,10 @@ const Unforgettable = () => {
     "https://cdn.prod.website-files.com/6870db6428fa0046e4e9dc88/689c26557ae981f7e2564ffa_CleanShot%202024-11-09%20at%2015.00.44-4.avif",
     "https://cdn.prod.website-files.com/6870db6428fa0046e4e9dc88/689c265532bfdc3016bc5c8f_CleanShot%202024-11-09%20at%2015.00.44-2.avif",
   ];
+
+
+
+
 
   return (
     <div className=" w-full bg-[#120011] overflow-hidden">
@@ -54,6 +60,8 @@ const Unforgettable = () => {
         <div className=" w-full mt-34">
           <div className="flex flex-col items-center justify-center">
             <div
+                  ref={containerRef}
+
               className="flex gap-9 perspective"
               style={{ perspective: "1000px" }}
             >

@@ -8,6 +8,7 @@ import Home from "./pages/Home/Section/Home";
 import Work from "./pages/Work/Section/Work";
 import ScrollToTop from "./Components/ScrollToTop";
 import { useEffect } from "react";
+import Loader from "./Components/Loader";
 
 const App = () => {
   // Locomotive scroll initialize
@@ -22,6 +23,8 @@ const App = () => {
   
   return (
     <div>
+      <Loader/>
+
       <ScrollToTop />
 
       <Routes>

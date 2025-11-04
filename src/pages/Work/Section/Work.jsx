@@ -8,6 +8,7 @@ import thirdlast from "../../../assets/images/3rdlast.png";
 import building from "../../../assets/images/building.png";
 import Unforgettable from '../../../Components/Unforgettable';
 import { Link } from 'react-router-dom';
+import Loader from '../../../Components/Loader';
 const Work = () => {
 
 
@@ -39,8 +40,9 @@ const Work = () => {
           .filter((card) => card.category === active)
           .slice(0, 3); // 3 cards each category
   return (
-    <div className=' w-full pt-27  '>
-        <div className='pb-80 px-15'>
+    <div className=' w-full   '>
+      <Loader/>
+        <div className='pb-10 px-15'>
         <WorkLanding/>
 
         </div>
@@ -67,8 +69,8 @@ const Work = () => {
   {filteredCards.map((elem, index) => (
     <Link
       key={index}
-      to={`/DetailsCom/${elem.id}`}
-      state={{ card: elem }}     >
+     to={`/DetailsCom/${elem.id}`}
+          state={{ card: elem }}     >
       <div className="h-full w-full">
         {/* Image Section */}
         <div className="pb-3 bg-black w-full overflow-hidden group rounded-xl">

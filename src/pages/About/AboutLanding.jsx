@@ -21,7 +21,7 @@ const AboutLanding = () => {
     </div>
     <div className='h-full  grid grid-cols-1'>
         <div className=' w-full '>
-            <img src="https://cdn.prod.website-files.com/6870db6428fa0046e4e9dc88/6889a13ae911e0ae33e0600a_IMG_2674%201.avif" className='h-full w-full object-cover' alt="" />
+          <img src="https://cdn.prod.website-files.com/6870db6428fa0046e4e9dc88/6889a13ae911e0ae33e0600a_IMG_2674%201.avif" className='h-full w-full object-cover' alt="" />
         </div>
         <h3 className=' font-[600] text-1xl mt-2 text-center '>Mammoth Murals helps brands, developers, and communities turn walls into landmarks that make places feel intentional and impossible to ignore.</h3>
         <br />

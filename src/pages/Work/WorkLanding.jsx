@@ -6,7 +6,7 @@ const WorkLanding = () => {
   return (
     <div className=' w-full relative'>
       {/* Big text */}
-      <Biggertext text="Work" classname="text-[62vw] leading-95 pt-11" />
+      <Biggertext text="Work" classname="text-[62vw] leading-165 pb-35  " />
 
       {/* Red box centered */}
       <div className='absolute top-2/3 left-1/2 -translate-x-1/2 -translate-y-1/2'>
