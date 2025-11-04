@@ -25,6 +25,7 @@ const HomeLandingpage = () => {
     tl.to(textLines, {
       y: 0,
       opacity: 1,
+      delay:1.3,
       duration: 1.2,
       stagger: 0.25, // har line ek ke baad ek
     });

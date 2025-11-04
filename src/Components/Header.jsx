@@ -1,11 +1,50 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Textaniamtion from "./textaniamtion";
 import Kindman from "../assets/images/Kindman.jpg";
 import { Link } from "react-router-dom";
 import ReuseButton from "./ReuseButton";
+import gsap from "gsap";
 const Header = () => {
+  const headerRef = useRef(null);
+  let lastScrollY = 0;
+  let isAnimating = false;
+
+
+  
+  const controlHeader = () => {
+    if (isAnimating) return; // prevent overlap animation
+    isAnimating = true;
+
+    if (window.scrollY > lastScrollY) {
+      // scroll down → hide header
+      gsap.to(headerRef.current, {
+        y: -100, // move up out of view
+        duration: 0.6,
+        ease: "power3.out",
+        onComplete: () => (isAnimating = false),
+      });
+    } else {
+      // scroll up → show header
+      gsap.to(headerRef.current, {
+        y: 0, // bring back to view
+        duration: 0.6,
+        ease: "power3.out",
+        onComplete: () => (isAnimating = false),
+      });
+    }
+
+    lastScrollY = window.scrollY;
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", controlHeader);
+    return () => window.removeEventListener("scroll", controlHeader);
+  }, []);
+
+
   return (
-    <div className=" px-8 py-6 z-[999] fixed  flex items-center justify-between  w-full ">
+    <div       ref={headerRef}
+    className=" px-8 py-6 z-[999] fixed  flex items-center justify-between  w-full ">
       <div className="p-1 bg-black rounded-1xl">
         <div className="-mt-1">
           <Link to="/"><Textaniamtion

@@ -22,7 +22,8 @@ const Biggertext = ({ text, classname, children }) => {
       y: 0,
       opacity: 1,
       duration: 1,
-      ease: "power4.out",
+      delay:1.4,
+            ease: "power4.out",
       stagger: 0.05,
     });
   }, [raw]);
