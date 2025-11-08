@@ -1,15 +1,19 @@
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import React, { useEffect, useRef } from "react";
-import { Link, useParams } from "react-router-dom";
-import card1 from "http://localhost:5173/src/assets/images/5thlast.png";
-
+import { Link, useLocation, useParams } from "react-router-dom";
+import card1 from "../assets/images/5thlast.png";
+import livenation from "../assets/images/Magiccity.png"
+import gulniary from "../assets/images/3rdlast.png"
+import building from "../assets/images/building.png"
+import southeastern from "../assets/images/2ndlast.png"
+import moutnain from "../assets/images/last.png"
 gsap.registerPlugin(ScrollTrigger);
 
 const DetailsCom = () => {
 
   const { id } = useParams();
-
+  
 
 
   const obj = [
@@ -40,7 +44,8 @@ const DetailsCom = () => {
       caseStudy: [
         {
           title: "Next Case Study",
-          subtitle: "Axel Row",
+          subtitle: [<>
+          Girl with the <br /> pearl earning</>],
           img: card1,
 
         },
@@ -58,24 +63,17 @@ const DetailsCom = () => {
       service: "MURALS",
       completionDate: "2025",
       images: [
-        "https://cdn.prod.website-files.com/6881fafa34e37145092525b4/68a94c29ba205ace413842ac_cocacolaamphitheater-23.avif",
-        "https://cdn.prod.website-files.com/6881fafa34e37145092525b4/68a9476d4ce7f2197d0035b4_cocacolaamphitheater-24.avif",
-        "https://cdn.prod.website-files.com/6881fafa34e37145092525b4/68a94786817d335a0c41dfa6_cocacolaamphitheater-36.avif",
+        "https://cdn.prod.website-files.com/6881fafa34e37145092525b4/68a949a685561a9f464c85dd_GirlwithPearlFinishedPhotosDSCF4298.avif",
+        "https://cdn.prod.website-files.com/6881fafa34e37145092525b4/68a949c51b87ff896e552c67_GirlwithPearlFinishedPhotosDSCF4287.avif",
+        "https://cdn.prod.website-files.com/6881fafa34e37145092525b4/68a949d7ecc5e406c2ae5610_GirlwithPearlFinishedPhotosDSCF4282.avif",
 
-        "https://cdn.prod.website-files.com/6881fafa34e37145092525b4/68a947cb983bd56d00a784d8_cocacolaamphitheater-19.avif",
-        "https://cdn.prod.website-files.com/6881fafa34e37145092525b4/68a9484235681dc4d09eedc5_cocacolaamphitheater-18.avif",
-        "https://cdn.prod.website-files.com/6881fafa34e37145092525b4/68a9485dba1b1860232ffffd_cocacolaamphitheater-15.avif",
-        "https://cdn.prod.website-files.com/6881fafa34e37145092525b4/68a94898fd9451940c970a48_cocacolaamphitheater-11.avif",
-        "https://cdn.prod.website-files.com/6881fafa34e37145092525b4/68a948e6323e13f19eb48d59_cocacolaamphitheater-9.avif",
-        "https://cdn.prod.website-files.com/6881fafa34e37145092525b4/68a94913beeaf7b0239506b4_cocacolaamphitheater-4.avif",
-        "https://cdn.prod.website-files.com/6881fafa34e37145092525b4/68a949454d5ec4b4de7540ae_cocacolaamphitheater-1.avif"
       ],
 
       caseStudy: [
         {
           title: "Next Case Study",
-          subtitle: "Axel Row",
-          img: card1,
+          subtitle: "Live nation",
+          img: livenation,
 
         },
       ],
@@ -105,8 +103,8 @@ const DetailsCom = () => {
       caseStudy: [
         {
           title: "Next Case Study",
-          subtitle: "Axel as",
-          img: card1,
+          subtitle: "Gulniary dropout",
+          img: gulniary,
 
         },
       ],
@@ -127,6 +125,16 @@ const DetailsCom = () => {
         "https://cdn.prod.website-files.com/6881fafa34e37145092525b4/68a94b372ce4160cb3692c1b_culinarydropout1-2.avif",
 
       ],
+
+
+      caseStudy: [
+        {
+          title: "Next Case Study",
+          subtitle: "Axel row",
+          img: building,
+
+        },
+      ],
     },
 
 
@@ -145,6 +153,15 @@ const DetailsCom = () => {
         "https://cdn.prod.website-files.com/6881fafa34e37145092525b4/68a94b6a716f312d1debcc6c_IMG_4225.avif",
 
       ],
+
+      caseStudy: [
+        {
+          title: "Next Case Study",
+          subtitle: "Mountain top",
+          img: moutnain,
+
+        },
+      ],
     },
 
     {
@@ -159,8 +176,18 @@ const DetailsCom = () => {
       service: "MURALS",
       completionDate: "2025",
       images: [
-        "https://cdn.prod.website-files.com/6881fafa34e37145092525b4/68a94b6a716f312d1debcc6c_IMG_4225.avif",
+        "https://cdn.prod.website-files.com/6881fafa34e37145092525b4/68a94ba5e6eaf6f5cfa776cf_Mountaintop3.avif",
 
+      ],
+
+      
+      caseStudy: [
+        {
+          title: "Next Case Study",
+          subtitle: "South eastern",
+          img: southeastern,
+
+        },
       ],
     },
 
@@ -204,7 +231,7 @@ const DetailsCom = () => {
       <div ref={wrapperRef} className="flex mt-7 h-full items-start">
         {/* Info Section */}
         <div className="card min-w-[55vw] px-7   flex flex-col justify-start text-black ">
-          <h1 className="ObviouslyDemo text-[#120011] uppercase font-bold text-[10.3vw] leading-33"> {data.title} </h1>
+          <h1 className="ObviouslyDemo text-[#120011]  uppercase font-bold text-[10.3vw] leading-33"> {data.title} </h1>
           <div className="w-full mt-10 flex items-start justify-start gap-32">
             <div className="space-y-2">
               <h5>{data.client}</h5>
@@ -226,26 +253,24 @@ const DetailsCom = () => {
             <img
               src={img}
               alt=""
-              className="h-full w-full mx-30 p-3 object-cover rounded-xl"
+              className="h-full w-full mx-30 p-3 object-contain rounded-xl"
             />
 
           </div>
         ))}
 
 
-
-
         {
           data.caseStudy.map((elem, index) => {
             return (
-              <div key={index} className="card min-w-[40vw]  mx-30 bg-[#FFD900] flex items-center justify-start flex-col  rounded-xl p-10 gap-10">
-                <h1 className="ObviouslyDemo text-[#120011] uppercase font-bold text-[2.3vw] leading-3">{elem.title}</h1>
+              <div key={index} className="card min-w-[40vw]  mx-30 bg-[#FFD900] flex items-center justify-start flex-col  rounded-xl p-10 gap-6">
+                <h1 className="ObviouslyDemo text-[#120011] text-center uppercase font-bold text-[2.3vw] leading-3">{elem.title}</h1>
 
-                <h1 className="ObviouslyDemo pb-5 text-[#120011] uppercase font-bold text-[8vw] leading-13">{elem.subtitle}</h1>
+                <h1 className="ObviouslyDemo  text-[#120011] uppercase font-bold text-[7vw] leading-20">{elem.subtitle}</h1>
 
 
                 <Link
-                  to={`/DetailsCom/${elem.id}`}
+                  to={`/Cards`}
                   state={{ card: elem }} // 👈 ye card ka pura data bhej raha hai
                   key={index}
                   className="h-full w-full"

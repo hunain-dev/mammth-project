@@ -16,8 +16,8 @@ const Reviews = () => {
   return (
     <div className="w-full bg-[#120011] text-white flex flex-col items-center justify-center gap-22  px-6">
       {/* Rating Section */}
-      <div className="text-center mb-6  py-10">
-        <p className="SuisseIntl uppercase text-[0.9vw] text-[#FFF6E5] tracking-widest">
+      <div className="text-center mb-6  lg:py-10 py-5">
+        <p className="SuisseIntl uppercase lg:text-[0.9vw] text-[2.5vw] text-[#FFF6E5] tracking-widest">
           5/5 Rating on Google Reviews
         </p>
         <div className="flex items-center justify-center mt-2 gap-1">
@@ -31,7 +31,7 @@ const Reviews = () => {
       </div>
 
       {/* Quote Section */}
-      <blockquote className="text-center SuisseIntl  text-[#FFF6E5] font-[600] max-w-5xl leading-12 text-[3.3vw]">
+      <blockquote className="text-center SuisseIntl  text-[#FFF6E5] font-[600] lg:max-w-5xl lg:leading-12 lg:text-[3.3vw]">
         “Fantastic artistry topped off with great communication and service.
         Andrew, Shane, and the team were very professional and obviously
         extremely talented.”

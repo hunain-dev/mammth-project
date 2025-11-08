@@ -20,7 +20,7 @@ const ReuseButton = ({ btntext, classname, imgsrc, link }) => {
             className="relative z-10 w-7 h-7 object-contain transition-all duration-300 group-hover:invert"
           />
         )}
-        <h2 className="relative z-10 transition-all duration-300 group-hover:text-white">
+        <h2 className="relative z-10  transition-all duration-300 group-hover:text-white">
           {btntext}
         </h2>
         <span className="absolute left-0 bottom-0 w-full h-0 bg-black transition-all duration-300 ease-in-out group-hover:h-full"></span>

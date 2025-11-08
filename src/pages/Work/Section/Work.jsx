@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import WorkLanding from '../WorkLanding'
-import card1 from "../../../assets/images/first-card.png";
+import card1 from "../../../assets/images/Magiccity.png";
 import last from "../../../assets/images/last.png";
 import fifththlast from "../../../assets/images/5thlast.png";
 import secondlast from "../../../assets/images/2ndlast.png";
@@ -9,7 +9,21 @@ import building from "../../../assets/images/building.png";
 import Unforgettable from '../../../Components/Unforgettable';
 import { Link } from 'react-router-dom';
 import Loader from '../../../Components/Loader';
+import livenation from "../../../assets/images/Magiccity.png"
+import card5h from "../../../assets/images/5thlast.png";
+import gulniary from "../../../assets/images/3rdlast.png"
+import buildings from "../../../assets/images/building.png"
+import moutnains from "../../../assets/images/last.png"
+import southeastern from "../../../assets/images/2ndlast.png"
+
+
 const Work = () => {
+
+  useEffect(() => {
+
+ 
+  }, [])
+  
 
 
   const filters = [
@@ -24,12 +38,86 @@ const Work = () => {
 
   // ✅ All card data
   const allCards = [
-    { id: 1, img: card1, text: "Live Nation: the magic city", category: "Murals" },
-    { id: 2, img: fifththlast, text: "Girls with the pearl earning", category: "Murals" },
-    { id: 3, img: building, text: "Axel row", category: "Murals" },
-    { id: 4, img: thirdlast, text: "Gulniary dropout", category: "Signs" },
-    { id: 5, img: secondlast, text: "South Eastern", category: "Signs" },
-    { id: 6, img: last, text: "Mountain top", category: "Ghost Signs" },
+    { id: 1, img: card1, text: "Live Nation: the magic city", category: "Murals",
+
+      
+      caseStudy: [
+        {
+          title: "Next Case Study",
+          subtitle: [<>
+          Girl with the <br /> pearl earning</>],
+          img: card5h,
+
+        },
+      ],
+
+
+
+     },
+    { id: 2, img: fifththlast, text: "Girls with the pearl earning", category: "Murals",
+
+
+      caseStudy: [
+        {
+          title: "Next Case Study",
+          subtitle: "Live nation",
+          img: livenation,
+
+        },
+      ],
+
+     },
+    { id: 3, img: building, text: "Axel row", category: "Murals",
+
+      caseStudy: [
+        {
+          title: "Next Case Study",
+          subtitle: "Gulniary dropout",
+          img: gulniary,
+
+        },
+      ],
+
+
+     },
+    { id: 4, img: thirdlast, text: "Gulniary dropout", category: "Signs",
+
+      caseStudy: [
+        {
+          title: "Next Case Study",
+          subtitle: "Axel row",
+          img: buildings,
+
+        },
+      ],
+
+
+     },
+    { id: 5, img: secondlast, text: "South Eastern", category: "Signs",
+
+      caseStudy: [
+        {
+          title: "Next Case Study",
+          subtitle: "Mountain top",
+          img: moutnains,
+
+        },
+      ],
+
+
+     },
+    { id: 6, img: last, text: "Mountain top", category: "Ghost Signs",
+
+      caseStudy: [
+        {
+          title: "Next Case Study",
+          subtitle: "South eastern",
+          img: southeastern,
+
+        },
+      ],
+
+     },
   ];
 
   // ✅ Filter Logic
@@ -46,8 +134,10 @@ const Work = () => {
         <WorkLanding/>
 
         </div>
-        <div className="w-full grid grid-cols-[18%_80%] px-6 gap-6">
-      <div className="SuisseIntl text-[1vw] font-[600] uppercase flex flex-col leading-4npm r  text-white rounded-2xl">
+        <div className=" w-full    grid grid-cols-[18%_80%] px-6 gap-6">
+        <div className="w-full">
+    <div className="sticky top-20">  {/* <-- Yeh line important hai */}
+      <div className="SuisseIntl text-[1vw] font-[600] uppercase flex flex-col leading-4 text-white rounded-2xl">
         {filters.map((elem, index) => (
           <h3
             key={index}
@@ -62,24 +152,28 @@ const Work = () => {
           </h3>
         ))}
       </div>
+    </div>
+    </div>
 
       {/* ✅ Right Cards Section */}
     
-<div className="px-3 w-full grid gap-4 grid-cols-2">
+<div className="px-3 w-full grid gap-4 lg:grid-cols-2 ">
   {filteredCards.map((elem, index) => (
     <Link
       key={index}
-     to={`/DetailsCom/${elem.id}`}
-          state={{ card: elem }}     >
+      to={`/DetailsCom/${elem.id}`}
+      state={{ card: elem }} 
+      
+      >
       <div className="h-full w-full">
         {/* Image Section */}
-        <div className="pb-3 bg-black w-full overflow-hidden group rounded-xl">
-          <img
-            src={elem.img}
-            alt={elem.text}
-            className="h-full w-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:scale-110"
-          />
-        </div>
+        <div className="pb-3 bg-black w-full overflow-hidden group">
+              <img
+                src={elem.img}
+                alt={elem.text}
+                className="h-full w-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:scale-80 hover:bg-red-400"
+              />
+            </div>
 
         {/* Text Section */}
         <div className="flex items-center justify-between w-full">

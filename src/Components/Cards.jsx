@@ -1,5 +1,5 @@
 import React from "react";
-import card1 from "../assets/images/first-card.png";
+import card1 from "../assets/images/Magiccity.png";
 import last from "../assets/images/last.png";
 import fifththlast from "../assets/images/5thlast.png";
 import secondlast from "../assets/images/2ndlast.png";
@@ -45,7 +45,7 @@ const Cards = () => {
     },
   ];
   return (
-    <div className="px-3 w-full grid gap-4 grid-cols-2">
+    <div className="px-3 w-full grid gap-4 lg:grid-cols-2 grid-cols-1">
       {obj.map((elem, index) => {
         return (
           <Link
@@ -64,7 +64,7 @@ const Cards = () => {
               />
             </div>
             <div className=" flex items-center justify-between w-full">
-              <h2 className="ObviouslyDemo uppercase text-3xl">{elem.text}</h2>
+              <h2 className="ObviouslyDemo uppercase lg:text-3xl text-2xl">{elem.text}</h2>
               <div className="py-1 px-3 border-2 mt-3 border-black flex items-center justify-center gap-3 border-b-4">
                 <h4 className="ObviouslyDemo text-1xl">2025</h4>
                 <h4 className="ObviouslyDemo text-1xl">Murals</h4>

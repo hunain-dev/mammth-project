@@ -198,6 +198,12 @@ body {
   animation: spriteFramesss var(--animation-duration) steps(var(--frame-count), end) infinite;
 }
 
+@media (max-width: 639px) { 
+  .u-spritefooterss{
+    --sprite-width: 180vw;
+    --sprite-height: 31vh;
+  }
+}
 /* === ANIMATION === */
 @keyframes spriteFramesss {
   from {

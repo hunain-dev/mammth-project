@@ -23,18 +23,18 @@ const Ourpartners = () => {
   }, [sets.length])
 
   return (
-    <div className="w-full text-center py-10">
-      <h3 className="SuisseIntl font-[550] text-[1.4vw] mb-6">
+    <div className="w-full text-center lg:py-10">
+      <h3 className="SuisseIntl font-[550] lg:text-[1.4vw] text-2xl mb-6">
         Partners that trust our work
       </h3>
 
-      <div className="grid grid-cols-4 gap-5 transition-all duration-700 ease-in-out">
+      <div className="grid lg:grid-cols-4 grid-cols-2 gap-5 transition-all duration-700 ease-in-out">
         {sets[currentSet].map((img, index) => (
           <div key={index} className="flex items-center justify-center p-4">
             <img
               src={img}
               alt="partner"
-              className="h-[100px] object-contain transition-all duration-700 ease-in-out"
+              className="lg:h-[100px] h-25 object-contain transition-all duration-700 ease-in-out"
             />
           </div>
         ))}

@@ -10,7 +10,7 @@ const Ourwork = () => {
 
       <div className="h-full w-full relative">
       <div className="w-full relative">
-        <Biggertext text="Our work"  classname="text-[36vw] leading-99" />
+        <Biggertext text="Our work"  classname="lg:text-[36vw] text-[35vw] lg:leading-99" />
         <div className='absolute top-14 left-0 flex justify-center items-center w-full h-full'>
           <Bacgkrondanimate  text={<>
             
@@ -21,7 +21,7 @@ See how our clients turn empty space into <br /> buzz, foot traffic, and busines
       
       </div>
     </div>
-    <div className='mt-30 '>
+    <div className='lg:mt-30 mt-12 '>
     <Cards/>
 
     </div>

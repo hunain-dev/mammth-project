@@ -5,7 +5,7 @@ import React from 'react'
 
 const Bacgkrondanimate = ({text}) => {
   return (
-    <div className='u-sprite flex items-center justify-center '  style={{
+    <div data-scroll data-scroll-speed="0.3" className='u-sprite flex items-center justify-center lg:opacity-100 opacity-0 '  style={{
                   "--sprite-url": `url(${swigger})`,
              "--sprite-width": "270vw",
 "--sprite-height": "75vh",

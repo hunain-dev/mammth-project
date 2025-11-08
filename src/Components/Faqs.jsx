@@ -60,22 +60,26 @@ const Faqs = () => {
     };
   
   return (
-    <div className=" w-full grid grid-cols-[40%_60%]">
-    <div className=" h-full flex items-start justify-start flex-col gap-7">
+    <div className=" w-full grid lg:grid-cols-[40%_60%]">
+    <div className="lg:px-0 px-3 h-full flex items-start justify-start flex-col gap-7">
     <div className='  bg-red-50'>
-        <img src="https://cdn.prod.website-files.com/6870db6428fa0046e4e9dc88/68882b1debda0c78c7070634_CleanShot%202024-11-09%20at%2015.00.44-3.avif" className='h-[58vh] w-full object-cover' alt="" />
+        <img src="https://cdn.prod.website-files.com/6870db6428fa0046e4e9dc88/68882b1debda0c78c7070634_CleanShot%202024-11-09%20at%2015.00.44-3.avif" className='lg:h-[58vh] w-full object-cover' alt="" />
     </div>
-    <h3 className='SuisseIntl font-[600]  text-[1.4vw] leading-snug'>
+    <h3 className='SuisseIntl font-[600]  lg:text-[1.4vw] lg:leading-snug'>
   Still got unanswered <br /> questions? Or still wondering <br /> if a mural is right for you?
 </h3>   
-<Button imgsrc={Kindman} btntext="Chat with us"  classname="px-4 py-2 bg-black text-white" />
-
+<Button
+              imgsrc={Kindman}
+              link="https://calendly.com/mammothmurals/meeting-with-andrew-clone"
+              btntext="Chat with us"
+              classname="lg:px-4 px-4 py-3 lg:text-[4vw] text-[3vw] bg-black text-white"
+            />
 
  </div>
     <div className=" h-full">
-        <h2 className='ObviouslyDemo uppercase text-[12vw] leading-35 font-[600] text-[#120011]'>Frequently <br /> Asked Questions</h2>
+        <h2 className='lg:px-0 px-3 lg:mt-0 mt-7 ObviouslyDemo uppercase lg:text-[12vw] text-6xl lg:leading-35 font-[600] text-[#120011]'>Frequently <br /> Asked Questions</h2>
 
-        <div className=' w-full grid lg:grid-cols-1 grid-cols-1  md:grid-cols-2 lg:px-1 px-0 lg:mt-22 lg:pb-0 md:pb-22 pb-40 '>
+        <div className=' w-full grid lg:grid-cols-1 grid-cols-1  md:grid-cols-2 lg:px-1 px-0 lg:mt-22  md:pb-22  '>
        
         <div  className='h-full '>
            <div className="lg:py-1 py-9 lg:px-1 px-4">

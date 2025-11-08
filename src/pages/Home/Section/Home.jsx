@@ -14,32 +14,32 @@ const Home = () => {
     <div className='w-full'>
       <Loader/>
 
-      <div className='pt-33 px-8  bg-[#FFD900]'>
+      <div className='lg:pt-33 pt-8 lg:px-8 px-4  bg-[#FFD900]'>
       <HomeLandingpage />
 
       </div>
       <div className='px-5'>
       <Ourwork />
       </div>
-      <div className='px-2 mt-10'>
+      <div className='px-2 lg:mt-10'>
       <Allwork />
       </div>
-      <div className='mt-12'>
+      <div className='lg:mt-12'>
       <Ourexpereince />
       </div>
 
-      <div className='mt-12 px-5'>
+      <div className='lg:mt-12 mt-4 px-5'>
       <Testimonials />
       </div>
-      <div className='mt-24 px-9'>
+      <div className='lg:mt-24 mt-13 lg:px-9 px-3'>
       <Reviews />
       </div>
 
-      <div className='mt-12 px-9'>
+      <div className='lg:mt-12 mt-10 lg:px-9'>
       <Faqs />
       </div>
 
-      <div className='mt-21 px-9'>
+      <div className='lg:mt-21 mt-8 lg:px-9 px-6'>
       <Unforgettable />
       </div>
     </div>

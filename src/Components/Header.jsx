@@ -44,7 +44,7 @@ const Header = () => {
 
   return (
     <div       ref={headerRef}
-    className=" px-8 py-6 z-[999] fixed  flex items-center justify-between  w-full ">
+    className=" lg:opacity-100 opacity-0 px-8 py-6 z-[999] fixed  flex items-center justify-between  w-full ">
       <div className="p-1 bg-black rounded-1xl">
         <div className="-mt-1">
           <Link to="/"><Textaniamtion

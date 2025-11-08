@@ -59,7 +59,7 @@ const Unforgettable = () => {
 
   return (
     <div className=" w-full bg-[#120011] overflow-hidden">
-      <div className="pt-23 px-20 w-full ">
+      <div className="lg:pt-23 pt-17 px-20 w-full ">
         <div className="h-full w-full flex items-center justify-center relative ">
           <Biggertext
             text={
@@ -68,10 +68,10 @@ const Unforgettable = () => {
                 Unforgettable
               </>
             }
-            classname="text-[11.5vw] text-center text-[#FFF6E5] leading-36"
+            classname="lg:text-[11.5vw] text-6xl text-center text-[#FFF6E5] lg:leading-36"
           />
 
-          <div className="h-full w-full absolute top-0 left-0 flex justify-between px-10">
+          <div className="h-full w-full absolute lg:opacity-100 opacity-0 top-0 left-0 flex justify-between px-10">
             {/* LEFT sprite box */}
             <div className="h-[48vh] w-[10%] relative overflow-hidden">
               <div className="hero_contact_top-left u-sprite u-sprite-blink is-home"></div>
@@ -81,21 +81,24 @@ const Unforgettable = () => {
           </div>
         </div>
 
-        <div className=" mt-11 w-full  flex items-center gap-9 justify-start flex-col">
-          <h3 className="SuisseIntl text-[#FFF6E5] text-center font-[400] text-[1.3vw] leading-7">
+        <div className=" lg:mt-11 mt-10 w-full  flex items-center gap-9 justify-start flex-col">
+          <h3 className="SuisseIntl text-[#FFF6E5] text-center font-[400] lg:text-[1.3vw] text-[2.3vw] lg:leading-7">
             Let’s talk strategy, locations, and how a mural <br /> can give your
             brand a powerful local presence.
           </h3>
          <Link to="https://calendly.com/mammothmurals/meeting-with-andrew-clone">
          <Button
-            imgsrc={Kindman}
-            btntext="Book a discovery call"
-            classname="px-4 py-2 bg-white text-black"
-          /></Link> 
+              imgsrc={Kindman}
+              link="https://calendly.com/mammothmurals/meeting-with-andrew-clone"
+              btntext="Book an deivleyr call"
+              classname="lg:px-4 px-5 py-2 lg:text-[4vw] text-[2.3vw] bg-white text-black"
+            />
+          
+          </Link> 
       
         </div>
 
-        <div className=" w-full mt-34">
+        <div className=" w-full lg:mt-34 mt-15">
           <div className="flex flex-col items-center justify-center">
             <div
                   ref={containerRef}
@@ -107,7 +110,7 @@ const Unforgettable = () => {
                 <div
                   key={index}
                   ref={(el) => (cardsRef.current[index] = el)}
-                  className="group relative w-84 h-79 py-8 transition-transform duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]"
+                  className="group relative lg:w-84 lg:h-79 w-41 h-46   py-8 transition-transform duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]"
                   style={{
                     transform: `rotate(${index % 2 === 0 ? "-4" : "4"}deg)`,
                   }}
@@ -115,7 +118,7 @@ const Unforgettable = () => {
                   <img
                     src={img}
                     alt=""
-                    className=" h-full w-100 object-cover rounded-lg shadow-lg group-hover:animate-[elasticBounce_0.8s_ease-out]"
+                    className=" h-full lg:w-100 object-cover rounded-lg shadow-lg group-hover:animate-[elasticBounce_0.8s_ease-out]"
                     style={{
                       transformOrigin: "center center",
                     }}
