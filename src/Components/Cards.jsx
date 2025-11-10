@@ -45,7 +45,7 @@ const Cards = () => {
     },
   ];
   return (
-    <div className="px-3 w-full grid gap-4 lg:grid-cols-2 grid-cols-1">
+    <div className="lg:px-3 w-full grid gap-4 lg:grid-cols-2 grid-cols-1">
       {obj.map((elem, index) => {
         return (
           <Link

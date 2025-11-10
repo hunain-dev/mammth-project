@@ -86,17 +86,19 @@ const HomeLandingpage = () => {
             <br />
             and turn every space into a landmark
           </h3>
-          <div className="flex items-start  justify-start lg:flex-row flex-col  gap-3 mt-6">
-            <Button
-              imgsrc={Kindman}
-              link="https://calendly.com/mammothmurals/meeting-with-andrew-clone"
-              btntext="Book a discovery call"
-              classname="px-4 py-3 text-[4vw] bg-black text-white"
-            />
+          <div className="flex items-start  justify-start lg:flex-row flex-col  gap-2 mt-6">
+          <Button
+  imgsrc={Kindman}
+  link="https://calendly.com/mammothmurals/meeting-with-andrew-clone"
+  btntext="Book a discovery call"
+  classname="px-4 py-3 text-[0.9vw] font-[600] bg-black text-white 
+             md:px-4 md:py-3 md:text-[0.9vw] 
+             sm:px-2 sm:py-2 sm:text-[3vw]"
+/>
             <Button
               btntext="See our work"
               link="/Work"
-              classname="lg:px-3 text-[3.3vw] lg:py-3 px-9 py-2"
+              classname="text-[1.9vw]    px-5 py-4"
             />
           </div>
         </div>

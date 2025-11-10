@@ -59,8 +59,8 @@ const Footer = () => {
 
         <div className="h-full w-full lg:mt-0 mt-6 lg:px-0 px-3">
         <div className="backtext relative h-full lg:pb-20  w-full flex flex-col items-center justify-center text-center overflow-hidden">
-        <Biggertext text="Mammoth" classname="lg:text-[35vw] text-[35vw] lg:leading-[20vw] leading-[20vw]" />
-  <Biggertext text="Murals" classname="lg:text-[35vw] text-[45vw] lg:leading-[20vw] leading-[43vw]" />
+        <Biggertext text="Mammoth" classname="lg:text-[35vw] text-[35vw] lg:leading-[17vw] leading-[20vw]" />
+  <Biggertext text="Murals" classname="lg:text-[46vw] mt-4 text-[45vw] lg:leading-[44vw] leading-[50vw]" />
   <div className="flex items-center justify-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
   <div className="footer_bottom_deco_wrap u-spritefooterss u-sprite-footers"></div>
 </div>
