@@ -24,18 +24,18 @@ const Footer = () => {
 
       <div className=" w-full lg:mt-34 mt-9 ">
         <div className=" w-full  grid lg:grid-cols-3 grid-cols-1 lg:px-0 px-3">
-          <div className="h-full flex items-start justify-start flex-col">
+          <div className="h-full flex items-start justify-between flex-col">
             <Textanimation
               text="andrew@mammothmurals.com"
-              classname="text-black lg:leading-9 lg:text-[2vw]"
+              classname="text-black lg:leading-9 font-semibold  lg:text-[2vw]"
             />
             <Textanimation
               text="2816 Crestwood Blvd"
-              classname="text-black lg:leading-9 lg:text-[2vw]"
+              classname="text-black lg:leading-7 font-semibold lg:text-[2vw]"
             />
             <Textanimation
               text="Irondale, AL 35210, United States"
-              classname="text-black lg:leading-9 lg:text-[2vw]"
+              classname="text-black lg:leading-7 font-semibold  lg:text-[2vw]"
             />
           </div>
           <div className="h-full flex lg:items-center lg:justify-center">
@@ -45,22 +45,22 @@ const Footer = () => {
             />
           </div>
 
-          <div className="h-full flex lg:items-center lg:justify-center">
+          <div className="h-full flex lg:items-end lg:justify-end lg:flex-col">
             <Textanimation
               text="Website by huy"
               classname="text-black lg:leading-9 lg:text-[2vw]"
             />
             <Textanimation
-              text="©2025 — All rights reserved"
+              text="2025 - All right Reserved"
               classname="text-black lg:leading-9 lg:text-[2vw]"
             />
           </div>
         </div>
 
         <div className="h-full w-full lg:mt-0 mt-6 lg:px-0 px-3">
-        <div className="backtext relative h-full lg:pb-20  w-full flex flex-col items-center justify-center text-center overflow-hidden">
-        <Biggertext text="Mammoth" classname="lg:text-[35vw] text-[35vw] lg:leading-[17vw] leading-[20vw]" />
-  <Biggertext text="Murals" classname="lg:text-[46vw] mt-4 text-[45vw] lg:leading-[44vw] leading-[50vw]" />
+        <div className="backtext text-center relative h-full lg:mt-4 lg:pb-6 pb-10  w-full flex flex-col items-start justify-start overflow-scroll ">
+        <Biggertext text="Mammoth" classname="lg:text-[35.7vw] text-[35vw] lg:leading-[17vw] leading-20" />
+  <Biggertext text="Murals" classname="lg:text-[46vw] mt-4 text-[45vw] lg:leading-[44vw] leading-33" />
   <div className="flex items-center justify-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
   <div className="footer_bottom_deco_wrap u-spritefooterss u-sprite-footers"></div>
 </div>

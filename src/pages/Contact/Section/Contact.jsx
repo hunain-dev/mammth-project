@@ -3,7 +3,7 @@ import ContactLanding from './ContactLanding'
 
 const Contact = () => {
   return (
-<div className='h-full w-full px-7  bg-[#120011] '>
+<div className='h-full w-full lg:px-7 px-4   bg-[#120011] '>
     <ContactLanding/>
       
     </div>

@@ -8,18 +8,18 @@ import Loader from "../../../Components/Loader";
 
 const Aboutus = () => {
   return (
-    <div className="pt-1 px-2 w-full ">
+    <div className="pt-1 lg:px-2 ">
       <Loader/>
 
       <AboutLanding />
       <Startedourstory />
-      <div className="mt-8 px-25 ">
+      <div className="lg:mt-8 mt-5 lg:px-25 ">
         <Ourpartners />
       </div>
-      <div className="mt-8 pb-10 py-15 px-8">
+      <div className="lg:mt-8 lg:pb-10 py-15 px-3 lg:px-8">
         <Ourteam />
       </div>
-      <div className="px-9">
+      <div className="lg:px-9">
         <Unforgettable />
       </div>
     </div>

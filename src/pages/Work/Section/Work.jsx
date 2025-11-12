@@ -130,34 +130,35 @@ const Work = () => {
   return (
     <div className=' w-full   '>
       <Loader/>
-        <div className='pb-10 px-15'>
+        <div className='lg:pb-10 lg:px-15'>
         <WorkLanding/>
 
         </div>
-        <div className=" w-full    grid grid-cols-[18%_80%] px-6 gap-6">
-        <div className="w-full">
-    <div className="sticky top-20">  {/* <-- Yeh line important hai */}
-      <div className="SuisseIntl text-[1vw] font-[600] uppercase flex flex-col leading-4 text-white rounded-2xl">
-        {filters.map((elem, index) => (
-          <h3
-            key={index}
-            onClick={() => setActive(elem.text)}
-            className={`px-3 py-2 rounded-lg w-fit cursor-pointer transition-all duration-300 ${
-              active === elem.text
-                ? "bg-black text-white scale-105"
-                : "bg-none text-black hover:bg-gray-200"
-            }`}
-          >
-            {elem.text}
-          </h3>
-        ))}
-      </div>
+        <div className=" w-full grid lg:grid-cols-[14%_84%] lg:px-6 px-5 gap-6">
+        <div className="w-full flex flex-row  lg:flex-col">
+  <div className="sticky top-20">
+    <div className="SuisseIntl lg:text-[1vw] text-[2.8vw] font-[600] uppercase flex flex-row lg:flex-col lg:gap-1 gap-2 leading-4 text-white rounded-2xl">
+      {filters.map((elem, index) => (
+        <h3
+          key={index}
+          onClick={() => setActive(elem.text)}
+          className={`px-3  py-2 rounded-lg w-fit cursor-pointer transition-all duration-300 ${
+            active === elem.text
+              ? "bg-black text-white scale-105"
+              : "bg-none text-black hover:bg-gray-200"
+          }`}
+        >
+          {elem.text}
+        </h3>
+      ))}
     </div>
-    </div>
+  </div>
+</div>
+
 
       {/* ✅ Right Cards Section */}
     
-<div className="px-3 w-full grid gap-4 lg:grid-cols-2 ">
+<div className="lg:px-3 w-full grid gap-4 lg:grid-cols-2 ">
   {filteredCards.map((elem, index) => (
     <Link
       key={index}
@@ -191,7 +192,7 @@ const Work = () => {
 </div>
     </div>
 
-<div className='mt-21 px-9'>
+<div className='lg:mt-21 mt-10  lg:px-9'>
       <Unforgettable />
       </div>
     </div>

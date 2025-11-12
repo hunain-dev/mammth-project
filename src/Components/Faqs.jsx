@@ -83,7 +83,7 @@ const Faqs = () => {
           imgsrc={Kindman}
           link="https://calendly.com/mammothmurals/meeting-with-andrew-clone"
           btntext="Chat with us"
-          classname="px-4 py-3 text-[0.9vw]      bg-black text-white"
+          classname="lg:px-4 lg:py-3 px-4 py-3 lg:text-[0.9vw]      bg-black text-white"
         />
       </div>
       <div className=" h-full">

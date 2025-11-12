@@ -6,9 +6,9 @@ import Ourprocess from './Ourprocess'
 
 const Services = () => {
   return (
-    <div className='pt-30   w-full'>
+    <div className='lg:pt-30 pt-30   w-full'>
       <Loader/>
-  <div className='px-9'>
+  <div className='lg:px-9 px-2'  >
   <ServicesLanding/>
 
   </div>

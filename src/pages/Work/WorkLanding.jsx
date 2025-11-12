@@ -6,10 +6,10 @@ const WorkLanding = () => {
   return (
     <div className=' w-full relative'>
       {/* Big text */}
-      <Biggertext text="Work" classname="text-[61vw] leading-165 pb-35  " />
+      <Biggertext text="Work" classname="lg:text-[61vw] text-[62vw] lg:px-0 px-2  lg:leading-165 leading-79 lg:pb-35 " />
 
       {/* Red box centered */}
-      <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
+      <div  data-scroll data-scroll-speed="0.3" className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
       <Bacgkrondanimate text={<>
             
             Don’t let blank walls waste potential. <br />

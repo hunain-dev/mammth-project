@@ -29,7 +29,7 @@ const Ourexpereince = () => {
     <h3 className='SuisseIntl font-[600] leading-5 text-1xl'>Of turning clients’ <br />  walls  into landmarks</h3>
   </div>
   <div className='h-full flex items-start lg:mt-0 mt-4 lg:px-16 px-3 justify-center flex-col'>
-    <h3 className='SuisseIntl font-[600] lg:text-[3.3vw] text-[9vw] leading-9 lg:leading-12'>Here’s how we help you transform <br /> empty walls into local landmarks <br /> and lasting brand impressions.</h3>
+    <h3 className='SuisseIntl font-[600] lg:text-[3.3vw] text-[5vw] leading-6 lg:leading-12'>Here’s how we help you transform <br /> empty walls into local landmarks <br /> and lasting brand impressions.</h3>
   </div>
 </div>
 <div className="w-full lg:flex lg:flex-col gap-10 lg:px-11 px-3"> {/* parent with spacing */}

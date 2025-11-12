@@ -3,6 +3,7 @@
 html,
 body {
   background-color: #FFF6E5;
+  overflow-x: hidden;
 }
 
 
@@ -136,6 +137,14 @@ body {
   --sprite-url: url("/src/assets//images/top.png");
   --sprite-width: 39vw; /* total width of sprite image */
   --sprite-height: 18vw; /* height of one frame */
+}
+
+
+@media (max-width: 639px) { 
+  .u-sprite-blink{
+    --sprite-width: 100vw;
+    --sprite-height: 18vh;
+  }
 }
 
 /* Sprite animation settings */

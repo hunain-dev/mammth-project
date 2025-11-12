@@ -14,7 +14,7 @@ const Home = () => {
     <div className='w-full'>
       <Loader/>
 
-      <div className='lg:pt-33 pt-18 lg:px-8 px-4  bg-[#FFD900]'>
+      <div className='lg:pt-33 pt-18 lg:px-8 px-2  bg-[#FFD900]'>
       <HomeLandingpage />
 
       </div>
@@ -39,7 +39,7 @@ const Home = () => {
       <Faqs />
       </div>
 
-      <div className='lg:mt-21 mt-8 lg:px-9 px-6'>
+      <div className='lg:mt-21 mt-8 lg:px-9 '>
       <Unforgettable />
       </div>
     </div>

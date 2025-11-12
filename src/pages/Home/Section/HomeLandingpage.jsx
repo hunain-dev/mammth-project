@@ -5,7 +5,8 @@ import wallframe from "../../../assets/images/wallframe.jpg";
 import Ourpartners from "../../../Components/Ourpartners";
 import Button from "../../../Components/ReuseButton";
 import gsap from "gsap";
-const HomeLandingpage = () => {
+const 
+HomeLandingpage = () => {
   const textRef = useRef(null);
   const videoRef = useRef(null);
   const parargh = useRef(null);
@@ -91,19 +92,22 @@ const HomeLandingpage = () => {
   imgsrc={Kindman}
   link="https://calendly.com/mammothmurals/meeting-with-andrew-clone"
   btntext="Book a discovery call"
-  classname="px-4 py-3 text-[0.9vw] font-[600] bg-black text-white 
+  classname="lg:text-[1vw] text-[3.2vw] py-2 px-4 lg:px-5 lg:py-3 font-[600] bg-black text-white 
              md:px-4 md:py-3 md:text-[0.9vw] 
              sm:px-2 sm:py-2 sm:text-[3vw]"
 />
+
+
+
             <Button
               btntext="See our work"
               link="/Work"
-              classname="text-[1.9vw]    px-5 py-4"
+              classname="lg:text-[1.2vw] text-[3.6vw] py-3 px-4 lg:px-5 lg:py-3"
             />
           </div>
         </div>
 
-        <div className="w-full overflow-hidden  lg:mt-15 mt-12">
+        <div className="w-full overflow-hidden  lg:mt-15 mt-9">
           <img
             data-scroll
             data-scroll-speed="0.1"
@@ -112,7 +116,7 @@ const HomeLandingpage = () => {
             className="lg:h-180 w-full object-cover"
           />
         </div>
-        <div className=" lg:py-11 py-6">
+        <div className=" lg:py-1 py-6">
           <Ourpartners />
         </div>
       </div>

@@ -82,7 +82,7 @@ const Unforgettable = () => {
         </div>
 
         <div className=" lg:mt-11 mt-10 w-full  flex items-center gap-9 justify-start flex-col">
-          <h3 className="SuisseIntl text-[#FFF6E5] text-center font-[400] lg:text-[1.3vw] text-[2.3vw] lg:leading-7">
+          <h3 className="SuisseIntl text-[#FFF6E5] text-center font-[400] lg:text-[1.3vw] text-[2.8vw] lg:leading-7">
             Let’s talk strategy, locations, and how a mural <br /> can give your
             brand a powerful local presence.
           </h3>
@@ -90,8 +90,8 @@ const Unforgettable = () => {
          <Button
               imgsrc={Kindman}
               link="https://calendly.com/mammothmurals/meeting-with-andrew-clone"
-              btntext="Book an deivleyr call"
-              classname="lg:px-4 px-5 py-2 lg:text-[4vw] text-[2.3vw] bg-white text-black"
+              btntext="Book an deivley call"
+              classname="lg:px-4 px-5 py-2 lg:text-[1vw] text-[2.4vw] bg-[#FFF6E5] text-black"
             />
           
           </Link> 

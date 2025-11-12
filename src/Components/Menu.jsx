@@ -91,12 +91,13 @@ const Menu = () => {
         className="fixed top-0 right-0 h-[90vh] px-3 w-full bg-white text-black flex flex-col items-start justify-center  md:gap-8 translate-x-full cursor-grab active:cursor-grabbing"
   >
         {[
-          { name: "Home", path: "/Ketaminetherapy" },
+          { name: "Home", path: "/" },
           { name: "Work", path: "/Work" },
-          { name: "About", path: "/pricing" },
-          { name: "Contact", path: "/pricing" },
+          { name: "About", path: "/Aboutus" },
+          { name: "Contact", path: "/Contact" },
           {
             name: "Services",
+             path: "/Services"
           },
         ].map((item, index) => {
           return (

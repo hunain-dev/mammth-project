@@ -221,19 +221,19 @@ const DetailsCom = () => {
 
     return () => ScrollTrigger.getAll().forEach((t) => t.kill());
   }, []);
-  if (!data) return <p className="text-center text-2xl p-10">No Data Found</p>;
+  if (!data) return <p className="text-center text-2xl lg:p-10">No Data Found</p>;
 
   return (
     <div
       ref={scrollContainerRef}
-      className="projectarea pt-20 ng-red w-full  bg-[#FFF6E5]"
+      className="projectarea lg:pt-20  w-full  bg-[#FFF6E5]"
     >
-      <div ref={wrapperRef} className="flex mt-7 h-full items-start">
+      <div ref={wrapperRef} className="flex lg:mt-7 mt-30 lg:px-0 px-3 h-full items-start lg:flex-row flex-col">
         {/* Info Section */}
-        <div className="card min-w-[55vw] px-7   flex flex-col justify-start text-black ">
-          <h1 className="ObviouslyDemo text-[#120011]  uppercase font-bold text-[10.3vw] leading-33"> {data.title} </h1>
-          <div className="w-full mt-10 flex items-start justify-start gap-32">
-            <div className="space-y-2">
+        <div className="card lg:min-w-[55vw] lg:px-7   flex flex-col justify-start text-black ">
+          <h1 className="ObviouslyDemo text-[#120011]  uppercase font-bold lg:text-[10.3vw] lg:leading-33 text-6xl leading-13"> {data.title} </h1>
+          <div className="w-full mt-10 flex items-start justify-start lg:gap-32 gap-20">
+            <div className="lg:space-y-2">
               <h5>{data.client}</h5>
               <h5>{data.service}</h5>
             </div>
@@ -248,12 +248,12 @@ const DetailsCom = () => {
 
           <div
             key={index}
-            className="card min-w-[55vw]    "
+            className="card lg:min-w-[55vw] lg:mt-0 mt-5    "
           >
             <img
               src={img}
               alt=""
-              className="h-full w-full mx-30 p-3 object-contain rounded-xl"
+              className="h-full w-full lg:mx-30 p-3 object-contain rounded-xl"
             />
 
           </div>
@@ -263,10 +263,10 @@ const DetailsCom = () => {
         {
           data.caseStudy.map((elem, index) => {
             return (
-              <div key={index} className="card min-w-[40vw]  mx-30 bg-[#FFD900] flex items-center justify-start flex-col  rounded-xl p-10 gap-6">
-                <h1 className="ObviouslyDemo text-[#120011] text-center uppercase font-bold text-[2.3vw] leading-3">{elem.title}</h1>
+              <div key={index} className="card lg:min-w-[40vw]  lg:mx-30 bg-[#FFD900] flex items-center justify-start flex-col  rounded-xl p-10 lg:gap-6 gap-5">
+                <h1 className="ObviouslyDemo text-[#120011] text-center uppercase font-bold lg:text-[2.3vw] lg:leading-3 text-4xl">{elem.title}</h1>
 
-                <h1 className="ObviouslyDemo  text-[#120011] uppercase font-bold text-[7vw] leading-20">{elem.subtitle}</h1>
+                <h1 className="ObviouslyDemo  text-[#120011] text-4xl uppercase font-bold lh:text-[7vw] lg:leading-20">{elem.subtitle}</h1>
 
 
                 <Link
