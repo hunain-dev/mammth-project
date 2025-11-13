@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import WorkLanding from '../WorkLanding'
 import card1 from "../../../assets/images/Magiccity.png";
 import last from "../../../assets/images/last.png";
@@ -7,7 +7,6 @@ import secondlast from "../../../assets/images/2ndlast.png";
 import thirdlast from "../../../assets/images/3rdlast.png";
 import building from "../../../assets/images/building.png";
 import Unforgettable from '../../../Components/Unforgettable';
-import { Link } from 'react-router-dom';
 import Loader from '../../../Components/Loader';
 import livenation from "../../../assets/images/Magiccity.png"
 import card5h from "../../../assets/images/5thlast.png";
@@ -15,6 +14,7 @@ import gulniary from "../../../assets/images/3rdlast.png"
 import buildings from "../../../assets/images/building.png"
 import moutnains from "../../../assets/images/last.png"
 import southeastern from "../../../assets/images/2ndlast.png"
+import { Link } from 'react-router-dom';
 
 
 const Work = () => {
@@ -159,7 +159,7 @@ const Work = () => {
     
 <div className="lg:px-3 w-full grid gap-4 lg:grid-cols-2 md:grid-cols-2 ">
   {filteredCards.map((elem, index) => (
-    <Link
+    <Link 
       key={index}
       to={`/DetailsCom/${elem.id}`}
       state={{ card: elem }} 

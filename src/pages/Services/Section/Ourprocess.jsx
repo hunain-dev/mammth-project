@@ -47,7 +47,7 @@ const Ourprocess = () => {
 
           <div className="h-full w-full lg:mt-13 mt-10 lg:px-2 ">
             <div className="h-full w-full ">
-              <h3 className="SuisseIntl text-white lg:text-[1.2vw] text-xl font-[600] lg:leading-6">
+              <h3 className="SuisseIntl text-white lg:text-[1.2vw] text-1xl font-[600] lg:leading-6">
                 We work with brands, developers, and <br /> institutions to make
                 bold ideas visible that <br /> are on time and with total
                 precision.

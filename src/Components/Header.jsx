@@ -57,7 +57,7 @@ const Header = () => {
 
       <div className="h-full  flex items-center justify-end gap-3">
 
-          <ReuseButton btntext="Work"  link="/work" classname="px-3 py-2 bg-[#FFD900]" />
+          <ReuseButton btntext="Work"  link="/work" classname="px-3 py-2 bg-[#FFD900]"  />
 
         
           <ReuseButton btntext="About" link="/Aboutus" classname="px-3 py-2  bg-[#FFD900]" />

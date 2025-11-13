@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import {  Routes, Route } from "react-router-dom";
 import LocomotiveScroll from "locomotive-scroll";
 import Aboutus from "./pages/About/Section/Aboutus";
 import Services from "./pages/Services/Section/Services";
