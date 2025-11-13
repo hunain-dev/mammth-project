@@ -209,19 +209,30 @@ body {
   animation: spriteFramesss var(--animation-duration) steps(var(--frame-count), end) infinite;
 }
 
+/* for mobile */
+
 @media (max-width: 639px) { 
   .u-spritefooterss{
     --sprite-width: 180vw;
     --sprite-height: 31vh;
   }
+  .hero_about_stop-motionss{
+    --sprite-width: 180vw;
+    --sprite-height: 31vh;
+  }
+
+
 }
 
-
+/* for tabelt */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .u-spritefooterss{
     --sprite-width: 210vw;
     --sprite-height: 60vh;
   }}
+
+
+
 
 /* === ANIMATION === */
 @keyframes spriteFramesss {

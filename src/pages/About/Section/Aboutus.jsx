@@ -8,7 +8,7 @@ import Loader from "../../../Components/Loader";
 
 const Aboutus = () => {
   return (
-    <div className="pt-1 lg:px-2 ">
+    <div className="pt-10 lg:px-2  ">
       <Loader/>
 
       <AboutLanding />
