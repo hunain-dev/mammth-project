@@ -147,6 +147,8 @@ body {
   }
 }
 
+
+
 /* Sprite animation settings */
 .u-sprite {
   --frame-count: 4; /* number of frames in the sprite sheet */
@@ -213,6 +215,14 @@ body {
     --sprite-height: 31vh;
   }
 }
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .u-spritefooterss{
+    --sprite-width: 210vw;
+    --sprite-height: 60vh;
+  }}
+
 /* === ANIMATION === */
 @keyframes spriteFramesss {
   from {

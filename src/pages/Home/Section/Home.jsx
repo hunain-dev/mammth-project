@@ -28,18 +28,18 @@ const Home = () => {
       <Ourexpereince />
       </div>
 
-      <div className='lg:mt-12 mt-4 px-5'>
+      <div className='lg:mt-12 md:mt-15 mt-4 px-5'>
       <Testimonials />
       </div>
       <div className='lg:mt-24 mt-13 lg:px-9 px-3'>
       <Reviews />
       </div>
 
-      <div className='lg:mt-12 mt-10 lg:px-9'>
+      <div className='lg:mt-12 mt-10 lg:px-9 md:px-0'>
       <Faqs />
       </div>
 
-      <div className='lg:mt-21 mt-8 lg:px-9 '>
+      <div className='lg:mt-21 mt-8 lg:px-9 md:px-5 '>
       <Unforgettable />
       </div>
     </div>

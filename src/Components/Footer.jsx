@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div className=" w-full lg:px-9 lg:mt-0 mt-7">
-      <div className=" w-full flex lg:items-center justify-between lg:flex-row flex-col lg:px-0 px-3 ">
+      <div className=" w-full flex lg:items-center justify-between lg:flex-row md:flex-row flex-col lg:px-0 px-3 ">
       <Link to="/"><Textanimation text="Home" classname="text-black lg:text-[5vw] text-5xl" /></Link>  
      <Link to="/Work"> <Textanimation text="Work" classname="text-black lg:text-[5vw]  text-5xl" /></Link>  
      <Link to="/About">         <Textanimation text="About" classname="text-black lg:text-[5vw]  text-5xl" />
@@ -23,7 +23,7 @@ const Footer = () => {
       </div>
 
       <div className=" w-full lg:mt-34 mt-9 ">
-        <div className=" w-full  grid lg:grid-cols-3 grid-cols-1 lg:px-0 px-3">
+        <div className=" w-full  grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 lg:px-0 px-3">
           <div className="h-full flex items-start justify-between flex-col">
             <Textanimation
               text="andrew@mammothmurals.com"
@@ -59,8 +59,8 @@ const Footer = () => {
 
         <div className="h-full w-full lg:mt-0 mt-6 lg:px-0 px-3">
         <div className="backtext text-center relative h-full lg:mt-4 lg:pb-6 pb-10  w-full flex flex-col items-start justify-start overflow-scroll ">
-        <Biggertext text="Mammoth" classname="lg:text-[35.7vw] text-[35vw] lg:leading-[17vw] leading-20" />
-  <Biggertext text="Murals" classname="lg:text-[46vw] mt-4 text-[45vw] lg:leading-[44vw] leading-33" />
+        <Biggertext text="Mammoth" classname="lg:text-[35.7vw] md:text-[36vw] text-[35vw] md:leading-[20vw] lg:leading-[17vw] leading-25" />
+  <Biggertext text="Murals" classname="lg:text-[46vw]  md:leading-[41vw] mt-4 md:text-[47vw] text-[45vw] lg:leading-[44vw] leading-33" />
   <div className="flex items-center justify-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
   <div className="footer_bottom_deco_wrap u-spritefooterss u-sprite-footers"></div>
 </div>

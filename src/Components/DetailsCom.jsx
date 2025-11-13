@@ -231,7 +231,7 @@ const DetailsCom = () => {
       <div ref={wrapperRef} className="flex lg:mt-7 mt-30 lg:px-0 px-3 h-full items-start lg:flex-row flex-col">
         {/* Info Section */}
         <div className="card lg:min-w-[55vw] lg:px-7   flex flex-col justify-start text-black ">
-          <h1 className="ObviouslyDemo text-[#120011]  uppercase font-bold lg:text-[10.3vw] lg:leading-33 text-6xl leading-13"> {data.title} </h1>
+          <h1 className="ObviouslyDemo text-[#120011]  uppercase font-bold lg:text-[10.3vw] lg:leading-33 text-6xl leading-13 md:text-[16vw] md:leading-28"> {data.title} </h1>
           <div className="w-full mt-10 flex items-start justify-start lg:gap-32 gap-20">
             <div className="lg:space-y-2">
               <h5>{data.client}</h5>

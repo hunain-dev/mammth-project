@@ -68,7 +68,7 @@ const Unforgettable = () => {
                 Unforgettable
               </>
             }
-            classname="lg:text-[11.5vw] text-6xl text-center text-[#FFF6E5] lg:leading-36"
+            classname="lg:text-[11.5vw] md:text-8xl text-6xl text-center text-[#FFF6E5] lg:leading-36"
           />
 
           <div className="h-full w-full absolute lg:opacity-100 opacity-0 top-0 left-0 flex justify-between px-10">
@@ -82,7 +82,7 @@ const Unforgettable = () => {
         </div>
 
         <div className=" lg:mt-11 mt-10 w-full  flex items-center gap-9 justify-start flex-col">
-          <h3 className="SuisseIntl text-[#FFF6E5] text-center font-[400] lg:text-[1.3vw] text-[2.8vw] lg:leading-7">
+          <h3 className="SuisseIntl text-[#FFF6E5] text-center font-[400] lg:text-[1.3vw] text-[2.8vw] lg:leading-7 md:text-1xl">
             Let’s talk strategy, locations, and how a mural <br /> can give your
             brand a powerful local presence.
           </h3>
@@ -91,7 +91,7 @@ const Unforgettable = () => {
               imgsrc={Kindman}
               link="https://calendly.com/mammothmurals/meeting-with-andrew-clone"
               btntext="Book an deivley call"
-              classname="lg:px-4 px-5 py-2 lg:text-[1vw] text-[2.4vw] bg-[#FFF6E5] text-black"
+              classname="lg:px-4 px-5 py-2 md:text-[2vw] md:px-3 lg:text-[1vw] text-[2.4vw] bg-[#FFF6E5] text-black"
             />
           
           </Link> 

@@ -5,8 +5,7 @@ import wallframe from "../../../assets/images/wallframe.jpg";
 import Ourpartners from "../../../Components/Ourpartners";
 import Button from "../../../Components/ReuseButton";
 import gsap from "gsap";
-const 
-HomeLandingpage = () => {
+const HomeLandingpage = () => {
   const textRef = useRef(null);
   const videoRef = useRef(null);
   const parargh = useRef(null);
@@ -59,7 +58,7 @@ HomeLandingpage = () => {
             ref={textRef}
             className="h-full  flex items-start justify-start items-center  "
           >
-            <div className="ObviouslyDemo text-left  text-[#120011] flex flex-col  lg:text-[10.9vw] text-6xl uppercase leading-[0.9] font-[600]">
+            <div className="ObviouslyDemo text-left md:text-8xl text-[#120011] flex flex-col  lg:text-[10.9vw] text-6xl uppercase leading-[0.9] font-[600]">
               <span>Murals that make</span>
               <span>Your business</span>
               <span>
@@ -69,16 +68,17 @@ HomeLandingpage = () => {
           </div>
           <div
             ref={videoRef}
-            className="h-full  flex items-start  justify-end flex-col lg:mt-30 mt-7 gap-1 p-1 lg:p-6"
-          >
+            className="h-full flex items-start justify-end flex-col
+             lg:mt-30 mt-7 gap-1 p-1 lg:p-6">
             <Video />
-            <h2 className="SuisseIntl font-[600] lg:text-[1.2vw]">
+
+            <h2 className="SuisseIntl  font-[600] lg:text-[1.2vw]">
               Show reel (2023__2025){" "}
             </h2>
           </div>
         </div>
         <div className="lg:mt-32 mt-20 lg:text-left " ref={parargh}>
-          <h3 className="SuisseIntl  lg:text-[1.6vw] text-[4.3vw] font-[600] lg:leading-8">
+          <h3 className="SuisseIntl  lg:text-[1.6vw] md:text-2xl   text-[4.3vw] font-[600] lg:leading-8">
             We paint bold, handle-crafted walls for real
             <br />
             estate developer designer-driven
@@ -87,22 +87,21 @@ HomeLandingpage = () => {
             <br />
             and turn every space into a landmark
           </h3>
-          <div className="flex items-start  justify-start lg:flex-row flex-col  gap-2 mt-6">
-          <Button
-  imgsrc={Kindman}
-  link="https://calendly.com/mammothmurals/meeting-with-andrew-clone"
-  btntext="Book a discovery call"
-  classname="lg:text-[1vw] text-[3.2vw] py-2 px-4 lg:px-5 lg:py-3 font-[600] bg-black text-white 
-             md:px-4 md:py-3 md:text-[0.9vw] 
+          <div className="flex items-start  justify-start lg:flex-row flex-col md:flex-row  gap-2 mt-6">
+            <Button
+              imgsrc={Kindman}
+              link="https://calendly.com/mammothmurals/meeting-with-andrew-clone"
+              btntext="Book a discovery call"
+              classname="lg:text-[1vw] text-[3.2vw] py-2 px-4 lg:px-5 lg:py-3 font-[600] bg-black text-white 
+             md:px-6 md:py-5 md:text-[1.6vw] 
              sm:px-2 sm:py-2 sm:text-[3vw]"
-/>
-
-
+            />
 
             <Button
               btntext="See our work"
               link="/Work"
-              classname="lg:text-[1.2vw] text-[3.6vw] py-3 px-4 lg:px-5 lg:py-3"
+              classname="lg:text-[1.2vw] text-[3.6vw] py-3 px-4 lg:px-5 lg:py-3  md:px-6 md:py-5 md:text-[2vw] 
+"
             />
           </div>
         </div>
@@ -113,10 +112,10 @@ HomeLandingpage = () => {
             data-scroll-speed="0.1"
             src={wallframe}
             alt=""
-            className="lg:h-180 w-full object-cover"
+            className="lg:h-180 md:h-130 w-full object-cover"
           />
         </div>
-        <div className=" lg:py-1 py-6">
+        <div className=" lg:py-1 py-6 md:py-2">
           <Ourpartners />
         </div>
       </div>

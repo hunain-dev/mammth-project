@@ -19,10 +19,7 @@ import southeastern from "../../../assets/images/2ndlast.png"
 
 const Work = () => {
 
-  useEffect(() => {
 
- 
-  }, [])
   
 
 
@@ -120,24 +117,26 @@ const Work = () => {
      },
   ];
 
-  // ✅ Filter Logic
+  // ✅ Filter  Logic
   const filteredCards =
     active === "All work"
       ? allCards
       : allCards
+
+      
           .filter((card) => card.category === active)
           .slice(0, 3); // 3 cards each category
   return (
     <div className=' w-full   '>
       <Loader/>
-        <div className='lg:pb-10 lg:px-15'>
+        <div className='lg:pb-10 lg:px-15 md:pb-45'>
         <WorkLanding/>
 
         </div>
-        <div className=" w-full grid lg:grid-cols-[14%_84%] lg:px-6 px-5 gap-6">
+        <div className=" w-full grid lg:grid-cols-[14%_84%] md:grid-cols-[14%_84%] lg:px-6 px-5 gap-6">
         <div className="w-full flex flex-row  lg:flex-col">
   <div className="sticky top-20">
-    <div className="SuisseIntl lg:text-[1vw] text-[2.8vw] font-[600] uppercase flex flex-row lg:flex-col lg:gap-1 gap-2 leading-4 text-white rounded-2xl">
+    <div className="SuisseIntl lg:text-[1vw] text-[2.8vw] md:text-[1.5vw] font-[600] uppercase flex flex-row md:flex-col lg:flex-col lg:gap-1 gap-2 md:gap-0 md:leading-3car leading-4 text-white rounded-2xl">
       {filters.map((elem, index) => (
         <h3
           key={index}
@@ -158,7 +157,7 @@ const Work = () => {
 
       {/* ✅ Right Cards Section */}
     
-<div className="lg:px-3 w-full grid gap-4 lg:grid-cols-2 ">
+<div className="lg:px-3 w-full grid gap-4 lg:grid-cols-2 md:grid-cols-2 ">
   {filteredCards.map((elem, index) => (
     <Link
       key={index}

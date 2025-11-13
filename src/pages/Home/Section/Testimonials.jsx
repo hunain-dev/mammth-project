@@ -32,7 +32,7 @@ const Testimonials = () => {
  <div className=' w-full flex items-center justify-start flex-col'>
   <h3 className='uppercase  font-[500] SuisseIntl text-1xl'>hear from our clients</h3>
 
-  <div className='w-full relative'> {/* ← relative yahan zaroori hai */}
+  <div className='w-full relative lg:mt-0 md:mt-5'> {/* ← relative yahan zaroori hai */}
     <div className='relative '>
     <Biggertext text="Testimonials" classname="lg:text-[27.4vw] text-[25.4vw] leading-25 lg:leading-65"/> 
        </div>
@@ -40,7 +40,7 @@ const Testimonials = () => {
     {/* black overlay */}
     <div className=' w-full absolute top-0 left-0  flex flex-col justify-between'>
   {/* top-left sprite */}
-  <div className="relative self-start lg:-mt-13">
+  <div className="relative self-start lg:-mt-13 md:-mt-13">
     <div className="u-spritetets u-sprite-quote"></div>
   </div>
 
@@ -50,8 +50,8 @@ const Testimonials = () => {
   </div>
 </div>
 
-<div className=' w-full text-center lg:mt-25 mt-9'>
- <h2 className='SuisseIntl lg:text-[1.3vw] text-[3vw] lg:leading-7 font-[600]'>From national campaigns to neighborhood landmarks, hear <br /> how our clients use hand-painted murals to boost visibility, <br /> build trust, and make a bold first impression that lasts.</h2> 
+<div className=' w-full text-center lg:mt-25 mt-9 md:mt-21'>
+ <h2 className='SuisseIntl lg:text-[1.3vw] md:text-[2vw] text-[3vw] lg:leading-7 font-[600]'>From national campaigns to neighborhood landmarks, hear <br /> how our clients use hand-painted murals to boost visibility, <br /> build trust, and make a bold first impression that lasts.</h2> 
 </div>
 
 
@@ -61,13 +61,13 @@ const Testimonials = () => {
   
 </div>
 
-<div className='  w-full  lg:mt-20 mt-11 px-2 grid gap-16 lg:grid-cols-3'>
+<div className='  w-full  lg:mt-20 mt-11 px-2 grid lg:gap-16 md:gap-9 lg:grid-cols-3 md:grid-cols-3'>
   {
     obj.map((elem,index)=>{
       return(
 <div
   key={index}
-  className="  rotate-3 lg:rotate-0"
+  className="  rotate-3 lg:rotate-0 md:rotate-0"
   style={{ backgroundColor: elem.bgcolor }}
 >
   <div
@@ -77,13 +77,13 @@ const Testimonials = () => {
   >
     <img
       src={elem.image}
-      className="lg:h-140 h-110 w-full object-cover"
+      className="lg:h-140 md:h-65 h-110 w-full object-cover"
       alt=""
     />
   </div>
 
-  <h5 className="SuisseIntl lg:text-[1.2vw] text-[3.5vw] lg:mt-3 mt-2 font-[550]">{elem.paragh}</h5>
-  <h2 className="mt-4 ObviouslyDemo lg:text-[1.5vw] lg:leading-8 uppercase font-[550]">
+  <h5 className="SuisseIntl lg:text-[1.2vw] text-[3.5vw] md:text-[1.8vw] lg:mt-3 mt-2 font-[550]">{elem.paragh}</h5>
+  <h2 className="mt-4 ObviouslyDemo lg:text-[1.5vw] md:text-[1.7vw] lg:leading-8 uppercase font-[550]">
     {elem.smaolltetx} <br /> <span>{elem.biggertexts}</span>
   </h2>
 </div>

@@ -14,10 +14,10 @@ const Reviews = () => {
         },
     ]
   return (
-    <div className="w-full bg-[#120011] text-white flex flex-col items-center justify-center gap-22  px-6">
+    <div className="w-full bg-[#120011] text-white flex flex-col items-center justify-center gap-22  md:gap-10   lg:gap-22  px-6">
       {/* Rating Section */}
       <div className="text-center mb-6  lg:py-10 py-5">
-        <p className="SuisseIntl uppercase lg:text-[0.9vw] text-[2.5vw] text-[#FFF6E5] tracking-widest">
+        <p className="SuisseIntl uppercase lg:text-[0.9vw] md:text-[1.3vw] text-[2.5vw] text-[#FFF6E5] tracking-widest">
           5/5 Rating on Google Reviews
         </p>
         <div className="flex items-center justify-center mt-2 gap-1">
@@ -31,7 +31,7 @@ const Reviews = () => {
       </div>
 
       {/* Quote Section */}
-      <blockquote className="text-center SuisseIntl  text-[#FFF6E5] font-[600] lg:max-w-5xl lg:leading-12 lg:text-[3.3vw]">
+      <blockquote className="text-center SuisseIntl  text-[#FFF6E5] font-[600] lg:max-w-5xl lg:leading-12 lg:text-[3.3vw] md:text-[4vw]">
         “Fantastic artistry topped off with great communication and service.
         Andrew, Shane, and the team were very professional and obviously
         extremely talented.”
@@ -39,7 +39,7 @@ const Reviews = () => {
 
       {/* Featured On Section */}
       <div className="mt-16 flex flex-col items-center p-11">
-        <p className="uppercase SuisseIntl text-[1.1vw] mb-9 ">Featured On</p>
+        <p className="uppercase SuisseIntl text-[1.1vw] md:text-[2vw] mb-9 ">Featured On</p>
 
         
         <div className="flex items-center justify-center gap-10 flex-wrap">
@@ -49,7 +49,7 @@ const Reviews = () => {
                         <img key={index}
                         src={elem.img}
                         alt="BhamNow"
-                        className="h-12 object-cover filter grayscale"
+                        className="h-12 md:h-8 object-cover filter grayscale"
                         />
                     )
                 })

@@ -53,14 +53,14 @@ const Menu = () => {
   }, [open]);
 
   return (
-    <div className="fixed top-0 left-0 w-full z-[999] lg:hidden ">
+    <div className="fixed  top-0 left-0 w-full z-[999] lg:hidden ">
       <div className="py-4 lg:px-2 px-3 flex lg:items-center  lg:gap-12 md:gap-115 gap-14  md:px-5">
         <div className="p-1 bg-black rounded-1xl lg:px-0 px-2">
           <div className="-mt-1">
             <Link to="/">
               <Textanimation
                 text="MAMMOTH MURALS"
-                classname="text-white text-[6vw]"
+                classname="text-white text-[6vw] md:text-4xl"
               />
             </Link>
           </div>
@@ -71,11 +71,11 @@ const Menu = () => {
       <div className="px-1 mt-3 flex justify-end absolute top-0 right-0 z-[1000]">
         {open ? (
           <div onClick={() => setOpen(false)} className="py-0.3 px-3">
-            <Textanimation text="Close" classname="text-black text-[8vw]" />
+            <Textanimation text="Close" classname="text-black md:text-4xl text-[8vw]" />
           </div>
         ) : (
           <div onClick={() => setOpen(true)} className="py-0.3 px-3">
-            <Textanimation text="Menu" classname="text-black text-[8vw]" />
+            <Textanimation text="Menu" classname="text-black text-[8vw] md:text-4xl" />
           </div>
         )}
       </div>
@@ -88,7 +88,7 @@ const Menu = () => {
         onDragEnd={(event, info) => {
           if (info.point.x > 100) setOpen(false);
         }}
-        className="fixed top-0 right-0 h-[90vh] px-3 w-full bg-white text-black flex flex-col items-start justify-center  md:gap-8 translate-x-full cursor-grab active:cursor-grabbing"
+        className="fixed top-0 right-0 h-[90vh] px-3 w-full bg-white text-black flex flex-col items-start justify-center  md:gap-1 translate-x-full cursor-grab active:cursor-grabbing"
   >
         {[
           { name: "Home", path: "/" },
@@ -105,7 +105,7 @@ const Menu = () => {
               to={item.path}
               key={index}
               ref={(el) => (linksRef.current[index] = el)}
-              className="text-6xl md:text-5xl fontspring text-black font-[550] cursor-pointer opacity-0"
+              className="text-6xl md:text-[12vw] fontspring text-black font-[550] cursor-pointer opacity-0"
             >
               <Textanimation text={item.name} />
             </Link>
