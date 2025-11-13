@@ -29,18 +29,18 @@ Years hand painting murals, <br />   signs and ghost signs.
             </>],        },
       ];
   return (
-<div className=" lg:mt-8 w-full lg:px-9 px-4 grid lg:grid-cols-[41%_59%]">
+<div className=" lg:mt-8 md:mt-4 w-full lg:px-9 px-4 grid lg:grid-cols-[41%_59%] md:grid-cols-[41%_59%]">
 <div className='h-full lg:mt-0 mt-6'>
-            <Biggertext text={<>Where we started <br /> and our story</>} classname="lg:text-[6vw] lg:leading-22 leading-11 text-5xl " />
+            <Biggertext text={<>Where we started <br /> and our story</>} classname="lg:text-[6vw] lg:leading-22 leading-11 text-5xl md:text-6xl  md:leading-13" />
             <div className="mt-10">
-  <h3 className="SuisseIntl font-[600] lg:text-[1.2vw] lg:leading-8">
+  <h3 className="SuisseIntl font-[600] lg:text-[1.2vw] lg:leading-8 md:text-[1.7vw]">
     Mammoth Murals was built on an obsession <br /> with painting and getting it right.
     Co-founded by Andrew <br /> Tynes and Shane B, our roots blend old-school <br /> craft
     with real business sense.
   </h3>
   <br />
 
-  <h3 className="SuisseIntl font-[600] lg:text-[1.2vw]  lg:leading-8">
+  <h3 className="SuisseIntl font-[600] lg:text-[1.2vw]  lg:leading-8 md:text-[1.7vw]">
   For us, a mural or sign serves as a lasting statement that feels authentically local and transforms any wall into something <br /> memorable. We select projects with intention, attend <br /> meticulously to every detail, and apply paint <br /> with the dedication that ensures our work endures for <br /> decades without losing its impact.
 
 
