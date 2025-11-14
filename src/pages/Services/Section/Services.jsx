@@ -3,6 +3,8 @@ import ServicesLanding from '../ServicesLanding'
 import Loader from '../../../Components/Loader'
 import Bigmurals from './Bigmurals'
 import Ourprocess from './Ourprocess'
+import Faqs from '../../../Components/Faqs'
+import Unforgettable from '../../../Components/Unforgettable'
 
 const Services = () => {
   return (
@@ -14,6 +16,12 @@ const Services = () => {
   </div>
        <Bigmurals/>
        <Ourprocess/>
+       <div className='lg:mt-12 mt-10 lg:px-9 md:px-0'>
+      <Faqs />
+      </div>
+      <div className='lg:mt-21 mt-8 lg:px-9 md:px-5 '>
+      <Unforgettable />
+      </div>
     </div>
   )
 }

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className=" w-full lg:px-9 lg:mt-0 mt-7">
+    <div className=" md:opacity-0 lg:opacity-100 opacity-100 w-full lg:px-9 lg:mt-0 mt-7">
       <div className=" w-full flex lg:items-center justify-between lg:flex-row md:flex-row flex-col lg:px-0 px-3 ">
       <Link to="/"><Textanimation text="Home" classname="text-black lg:text-[5vw] text-5xl" /></Link>  
      <Link to="/Work"> <Textanimation text="Work" classname="text-black lg:text-[5vw]  text-5xl" /></Link>  

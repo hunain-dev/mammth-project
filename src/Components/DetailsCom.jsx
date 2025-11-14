@@ -202,7 +202,7 @@ const DetailsCom = () => {
         className="flex lg:mt-7 mt-30 lg:px-0 px-3 h-full items-start lg:flex-row flex-col"
       >
         {/* Info Section */}
-        <div className="card lg:min-w-[55vw] lg:px-7   flex flex-col justify-start text-black ">
+        <div className="card lg:min-w-[55vw]   md:min-w-[55vw] lg:px-7   flex flex-col justify-start text-black ">
           <h1 className="ObviouslyDemo text-[#120011]  uppercase font-bold lg:text-[10.3vw] lg:leading-33 text-6xl leading-13 md:text-[16vw] md:leading-28">
             {" "}
             {data.title}{" "}
@@ -220,7 +220,7 @@ const DetailsCom = () => {
         </div>
 
         {data.images.map((img, index) => (
-          <div key={index} className="card lg:min-w-[55vw] lg:mt-0 mt-5    ">
+          <div key={index} className="card lg:min-w-[55vw] md:min-w-[55vw] lg:mt-0 mt-5    ">
             <img
               src={img}
               alt=""
