@@ -14,7 +14,7 @@ const Home = () => {
     <div className='w-full'>
       <Loader/>
 
-      <div className='lg:pt-33 pt-18 lg:px-8 px-2  bg-[#FFD900]'>
+      <div className='lg:pt-33 pt-18 lg:px-8 px-2  bg-red-500'>
       <HomeLandingpage />
 
       </div>
