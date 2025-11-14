@@ -53,7 +53,7 @@ const HomeLandingpage = () => {
   return (
     <>
       <div className="w-full   ">
-        <div className="grid lg:grid-cols-[70%_31%] grid-cols-1 w-full ">
+        <div className="grid lg:grid-cols-[70%_31%] grid-cols-1 w-full  ">
           <div
             ref={textRef}
             className="h-full  flex items-start justify-start items-center  "
