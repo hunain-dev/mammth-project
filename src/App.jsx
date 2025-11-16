@@ -1,4 +1,4 @@
-import {  Routes, Route } from "react-router-dom";
+import {  Routes, Route, useLocation } from "react-router-dom";
 import LocomotiveScroll from "locomotive-scroll";
 import Aboutus from "./pages/About/Section/Aboutus";
 import Services from "./pages/Services/Section/Services";
@@ -11,18 +11,20 @@ import { useEffect } from "react";
 import Loader from "./Components/Loader";
 
 const App = () => {
-  // Locomotive scroll initialize
+  const location = useLocation();
+
   useEffect(() => {
-    const locomotiveScroll = new LocomotiveScroll();
-  
+    const loco = new LocomotiveScroll({
+      smooth: true,
+    });
+
     return () => {
-      // 👇 page change hone pe scroll destroy ho jaye
-      locomotiveScroll.destroy();
+      loco.destroy();
     };
-  }, []);
+  }, [location.pathname]); // <- important
   
   return (
-    <div className="h-full w-full">
+    <div className="h-full w-full" data-scroll-container>
       <Loader/>
 
       <ScrollToTop />
@@ -33,7 +35,6 @@ const App = () => {
         <Route path="/Aboutus" element={<Aboutus />} />
         <Route path="/Services" element={<Services />} />
         <Route path="/Contact" element={<Contact />} />
-
         <Route path="/DetailsCom/:id" element={<DetailsCom />} />
       </Routes>
     </div>

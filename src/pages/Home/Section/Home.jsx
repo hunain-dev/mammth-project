@@ -14,9 +14,8 @@ const Home = () => {
     <div className='w-full'>
       <Loader/>
 
-      <div className='lg:pt-33 pt-18 lg:px-8 px-2  bg-[#FFD900]'>
+      <div className='lg:pt-31 pt-18 lg:px-8 px-2  bg-[#FFD900]'>
       <HomeLandingpage />
-
       </div>
       <div className='px-5'>
       <Ourwork />
@@ -24,7 +23,7 @@ const Home = () => {
       <div className='px-2 lg:mt-10'>
       <Allwork />
       </div>
-      <div className='lg:mt-12'>
+      <div className='lg:mt-12 '>
       <Ourexpereince />
       </div>
 

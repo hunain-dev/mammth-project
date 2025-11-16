@@ -195,8 +195,7 @@ const DetailsCom = () => {
   return (
     <div
       ref={scrollContainerRef}
-      className="projectarea lg:pt-20  w-full  bg-[#FFF6E5]"
-    >
+      className="projectarea lg:pt-20  w-full  bg-[#FFF6E5]">
       <div
         ref={wrapperRef}
         className="flex lg:mt-7 mt-30 lg:px-0 px-3 h-full items-start lg:flex-row flex-col"
