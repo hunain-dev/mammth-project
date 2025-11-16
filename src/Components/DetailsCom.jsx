@@ -1,7 +1,7 @@
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import React, { useEffect, useRef } from "react";
-import { Link, useLocation, useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import card1 from "../assets/images/5thlast.png";
 import livenation from "../assets/images/Magiccity.png";
 import gulniary from "../assets/images/3rdlast.png";
@@ -167,13 +167,18 @@ const DetailsCom = () => {
 
   const wrapperRef = useRef(null);
   const scrollContainerRef = useRef(null);
-
+  
   useEffect(() => {
-    const sections = gsap.utils.toArray(".card"); // sab card select karne ke liye
+    // ScrollTrigger instances for this page
+    const triggers = [];
+  
+    // Calculate widths
+    const sections = gsap.utils.toArray(".card");
     const totalWidth = scrollContainerRef.current.scrollWidth;
     const windowWidth = window.innerWidth;
-
-    gsap.to(wrapperRef.current, {
+  
+    // Create animation
+    const anim = gsap.to(wrapperRef.current, {
       x: -(totalWidth - windowWidth),
       ease: "none",
       scrollTrigger: {
@@ -184,13 +189,20 @@ const DetailsCom = () => {
         pin: true,
         anticipatePin: 1,
         markers: false,
+        onUpdate: (self) => triggers.push(self), // store triggers
       },
     });
-
-    return () => ScrollTrigger.getAll().forEach((t) => t.kill());
+  
+    // Refresh GSAP (important)
+    ScrollTrigger.refresh();
+  
+    return () => {
+      // Kill only this page's triggers
+      triggers.forEach((t) => t.kill());
+      anim.kill();
+    };
   }, []);
-  if (!data)
-    return <p className="text-center text-2xl lg:p-10">No Data Found</p>;
+  
 
   return (
     <div
