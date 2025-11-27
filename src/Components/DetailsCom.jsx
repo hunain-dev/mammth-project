@@ -1,7 +1,7 @@
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import React, { useEffect, useRef } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useLocation, useParams } from "react-router-dom";
 import card1 from "../assets/images/5thlast.png";
 import livenation from "../assets/images/Magiccity.png";
 import gulniary from "../assets/images/3rdlast.png";
@@ -12,7 +12,11 @@ gsap.registerPlugin(ScrollTrigger);
 
 const DetailsCom = () => {
   const { id } = useParams();
+  const location = useLocation();
+  const card = location.state?.card;   // ✅ safe optional chaining
 
+  console.log("params id:", id);
+  console.log("state data:", card);
   const obj = [
     {
       id: 1,
@@ -42,11 +46,7 @@ const DetailsCom = () => {
       caseStudy: [
         {
           title: "Next Case Study",
-          subtitle: [
-            <>
-              Girl with the <br /> pearl earning
-            </>,
-          ],
+          subtitle: [<>Girl with the pearl earning</>],
           img: card1,
         },
       ],
@@ -167,16 +167,16 @@ const DetailsCom = () => {
 
   const wrapperRef = useRef(null);
   const scrollContainerRef = useRef(null);
-  
+
   useEffect(() => {
     // ScrollTrigger instances for this page
     const triggers = [];
-  
+
     // Calculate widths
     const sections = gsap.utils.toArray(".card");
     const totalWidth = scrollContainerRef.current.scrollWidth;
     const windowWidth = window.innerWidth;
-  
+
     // Create animation
     const anim = gsap.to(wrapperRef.current, {
       x: -(totalWidth - windowWidth),
@@ -192,22 +192,22 @@ const DetailsCom = () => {
         onUpdate: (self) => triggers.push(self), // store triggers
       },
     });
-  
+
     // Refresh GSAP (important)
     ScrollTrigger.refresh();
-  
+
     return () => {
       // Kill only this page's triggers
       triggers.forEach((t) => t.kill());
       anim.kill();
     };
   }, []);
-  
 
   return (
     <div
       ref={scrollContainerRef}
-      className="projectarea lg:pt-20  w-full  bg-[#FFF6E5]">
+      className="projectarea lg:pt-20  w-full  bg-[#FFF6E5]"
+    >
       <div
         ref={wrapperRef}
         className="flex lg:mt-7 mt-30 lg:px-0 px-3 h-full items-start lg:flex-row flex-col"
@@ -231,7 +231,10 @@ const DetailsCom = () => {
         </div>
 
         {data.images.map((img, index) => (
-          <div key={index} className="card lg:min-w-[55vw] md:min-w-[55vw] lg:mt-0 mt-5    ">
+          <div
+            key={index}
+            className="card lg:min-w-[55vw] md:min-w-[55vw] lg:mt-0 mt-5"
+          >
             <img
               src={img}
               alt=""
@@ -244,40 +247,39 @@ const DetailsCom = () => {
           return (
             <div
               key={index}
-              className="card lg:min-w-[40vw]  lg:mx-30 bg-[#FFD900] flex items-center justify-start flex-col  rounded-xl p-10 lg:gap-6 gap-5"
+              className="card lg:min-w-[40vw]  lg:mx-30 bg-[#FFD900] flex items-center justify-start flex-col  rounded-xl p-10 lg:gap-1 gap-5"
             >
-              <h1 className="ObviouslyDemo text-[#120011] text-center uppercase font-bold lg:text-[4vw] lg:leading-3 text-4xl">
+              <h1 className="ObviouslyDemo text-[#120011] text-center uppercase font-bold lg:text-[3vw] lg:leading-3 text-4xl">
                 {elem.title}
               </h1>
 
-              <h1 className="ObviouslyDemo  text-[#120011] text-4xl uppercase font-bold lg:text-[5vw] lg:leading-20">
+              <h1 className="ObviouslyDemo  text-[#120011] text-4xl uppercase font-bold lg:text-[4vw] lg:leading-24">
                 {elem.subtitle}
               </h1>
 
-              <Link
-                to={`/Cards`}
-                state={{ card: elem }} // 👈 ye card ka pura data bhej raha hai
-                key={index}
-                className="h-full w-full"
-                style={{ backgroundColor: elem.backgoruncolor }}
-              >
-                <div className="pb-3 bg-black w-full overflow-hidden group">
-                  <img
-                    src={elem.img}
-                    alt={elem.text}
-                    className="h-full w-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:scale-80"
-                  />
+              <div className="pb-3 bg-black w-full overflow-hidden group">
+                <Link to={`/DetailsCom/${index}`} state={{ card: elem }}>
+                {card ? (
+ <img  src={card.img} alt={card.text}
+ className="h-full w-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:scale-80"
+/>
+                )
+                : (
+                  <p>No card data</p>
+                )
+              }                 
+                </Link>
+              </div>
+
+              <div className="flex items-center justify-between w-full">
+                <h2 className="ObviouslyDemo uppercase text-3xl">
+                  {elem.text}
+                </h2>
+                <div className="py-1 px-3 border-2 mt-3 border-black flex items-center justify-center gap-3 border-b-4">
+                  <h4 className="ObviouslyDemo text-1xl">2025</h4>
+                  <h4 className="ObviouslyDemo text-1xl">Murals</h4>
                 </div>
-                <div className="flex items-center justify-between w-full">
-                  <h2 className="ObviouslyDemo uppercase text-3xl">
-                    {elem.text}
-                  </h2>
-                  <div className="py-1 px-3 border-2 mt-3 border-black flex items-center justify-center gap-3 border-b-4">
-                    <h4 className="ObviouslyDemo text-1xl">2025</h4>
-                    <h4 className="ObviouslyDemo text-1xl">Murals</h4>
-                  </div>
-                </div>
-              </Link>
+              </div>
             </div>
           );
         })}
