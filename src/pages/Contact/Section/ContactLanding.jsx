@@ -1,6 +1,6 @@
 import React from 'react'
 import Biggertext from '../../../Components/Biggertext'
-import Textanimation from '../../../Components/textaniamtion'
+import Textanimation from '../../../Components/Textaniamtion'
 import Button from '../../../Components/ReuseButton'
 import Kindman from "../../../assets/images/Kindman.jpg";
 
