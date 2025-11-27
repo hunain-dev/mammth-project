@@ -87,7 +87,7 @@ const Faqs = () => {
         />
       </div>
       <div className=" h-full">
-        <h2 className="lg:px-0 px-3 lg:mt-0 mt-7 md:text-7xl ObviouslyDemo uppercase lg:text-[12vw] text-6xl lg:leading-35 font-[600] text-[#120011]">
+        <h2 className="lg:px-0 px-3 lg:mt-0 mt-7 md:text-7xl ObviouslyDemo uppercase lg:text-[12vw] text-6xl lg:leading-35 font-[600] text-[#120011]  2xl:leading-40">
           Frequently <br /> Asked Questions
         </h2>
 

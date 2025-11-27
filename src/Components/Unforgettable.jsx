@@ -68,7 +68,7 @@ const Unforgettable = () => {
                 Unforgettable
               </>
             }
-            classname="lg:text-[11.5vw] md:text-8xl text-6xl text-center text-[#FFF6E5] lg:leading-36"
+            classname="lg:text-[11.5vw] md:text-8xl text-6xl text-center text-[#FFF6E5] lg:leading-36 2xl:leading-40"
           />
 
           <div className="h-full w-full absolute lg:opacity-100 opacity-0 top-0 left-0 flex justify-between px-10">

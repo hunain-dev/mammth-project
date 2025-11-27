@@ -68,6 +68,8 @@ body {
   animation: spriteFrames var(--animation-duration) steps(var(--frame-count)) infinite;
 }
 
+
+
 @keyframes spriteFrames {
   from {
     background-position: 0 0;
@@ -94,6 +96,8 @@ body {
   overflow: hidden;
   animation: spriteFrames var(--animation-duration) steps(4, end) infinite;
 }
+
+
 
 /* Specific sprite image */
 .u-sprite-quote {
@@ -146,7 +150,6 @@ body {
     --sprite-height: 18vh;
   }
 }
-
 
 
 /* Sprite animation settings */
@@ -239,8 +242,6 @@ body {
   
 
 }
-
-
 
 
 /* === ANIMATION === */

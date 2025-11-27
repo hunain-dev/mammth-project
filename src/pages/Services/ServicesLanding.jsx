@@ -47,7 +47,7 @@ const ServicesLanding = () => {
         <div className='h-full w-fit text-left'>
         <Biggertext text={<>Work that's crafted to <br /> never go extinct and <br />deliver results.
 
-            </>} classname="lg:text-[10.5vw] md:text-[12vw]   md:leading-22 text-[14vw] leading-13 lg:leading-31"/> 
+            </>} classname="lg:text-[10.5vw] md:text-[12vw]   md:leading-22 text-[14vw] leading-13 lg:leading-31 2xl:leading-34"/> 
 
         </div>
         <div className='h-full lg:mt-20 mt-10 grid lg:gap-0 md:gap-4 lg:grid-cols-[1fr_1.2fr_1fr] md:grid-cols-[1fr_1.5fr_1fr] grid-cols-1 '>

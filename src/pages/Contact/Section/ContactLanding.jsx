@@ -9,10 +9,10 @@ const ContactLanding = () => {
   return (
     <div className=" lg:pt-23 md:pt-10 w-full grid grid-cols-1">
     <div className="h-full w-full  ">
-<Biggertext text="Get in touch" classname="lg:text-[28vw] md:text-[28vw] text-8xl text-[#FFF6E5] text-center leading-64  "/> 
+<Biggertext text="Get in touch" classname="lg:text-[28vw] md:text-[28vw] text-8xl text-[#FFF6E5] text-center leading-64 2xl:mb-25 "/> 
         
     </div>
-    <div className=' m-auto  w-fit lg:mt-25  md:mt-80 md:pb-72 lg:pb-0 pb-20 '>
+    <div className=' m-auto  w-fit lg:mt-25  md:mt-20 md:pb-72 lg:pb-0 pb-20 '>
         <div className='relative'>
         <Button
           imgsrc={Kindman}
