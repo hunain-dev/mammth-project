@@ -1,5 +1,5 @@
 import React from "react";
-import Textanimation from "./textaniamtion";
+import Textanimation from "./Textaniamtion";
 import Biggertext from "./Biggertext";
 import { Link } from "react-router-dom";
 

@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import Textaniamtion from "./textaniamtion";
+import Textaniamtion from "./Textaniamtion";
 import Kindman from "../assets/images/Kindman.jpg";
 import { Link } from "react-router-dom";
 import ReuseButton from "./ReuseButton";
