@@ -1,9 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
-import { IoChevronDown, IoChevronUp } from "react-icons/io5";
 import { motion } from "framer-motion";
 import gsap from "gsap";
 import { Link, useLocation } from "react-router-dom";
-import Textanimation from "./textaniamtion";
+import Textanimation from "./Textaniamtion";
 
 const Menu = () => {
   const [open, setOpen] = useState(false);
